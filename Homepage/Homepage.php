@@ -18,12 +18,12 @@
                             <div class="form-group">
                                 <label for="Image"><a href="./Homepage.php"><img id="rocam-logo" src="./Rocambolesque-logo-DEF.png" alt="Image"></a></label>
                                 <div class="navbar">
-                                    <a href="./Homepage.php">Menu</a>
-                                    <a href="./Homepage.php">Make reservation</a>
-                                    <a href="./Homepage.php">About us</a>
+                                    <a href="./Homepage.php"><b>Menu</b></a>
+                                    <a href="./Homepage.php"><b>Make reservation</b></a>
+                                    <a href="./Homepage.php"><b>About us</b></a>
                                 </div>
                                 <div class="login">
-                                    <a href="./Homepage.php">Login</a>
+                                    <a href="./Homepage.php"><b>Login</b></a>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,9 @@
             <div class="col-6">
                 <div class="fronttext">
                     <div class="form-group">
-                        <h3>Rocambolesque</h3>
+                        <div class="rocambolesque-text">
+                            <h1>Rocambolesque</h1>
+                        </div>
                     </div>
                 </div>
             </div>
