@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -20,6 +21,16 @@ return new class extends Migration
             $table->string('child_chairs')->nullable();
             $table->timestamps();
         });
+
+        DB::table('reservation')->insert([
+            [
+                'days' => 'monday',
+                'date' => '2020-08-05',
+                'time' => '15:30',
+                'table' => 'table 1',
+                'child_chairs' => '1 child chair'
+            ]
+        ]);
     }
 
     /**
