@@ -28,7 +28,7 @@ return new class extends Migration
                 'date' => '2020-08-05',
                 'time' => '15:30',
                 'table' => 'table 1',
-                'child_chairs' => '1 child chair'
+                'child_chairs' => '1 chair'
             ]
         ]);
     }
