@@ -9,6 +9,8 @@ class ReservationController extends Controller
 {
     public function index()
     {
-        $information = Reservation::indexReservation();
+        $information = Reservation::indexReservation()->get();
+
+        return view('reservation.index', compact('information'));
     }
 }
