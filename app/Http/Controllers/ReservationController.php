@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Reservation;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
@@ -10,7 +11,8 @@ class ReservationController extends Controller
     public function index()
     {
         $information = Reservation::indexReservation()->get();
+        $IsOrNotAdmin = User::IsOrNotAdmin()->get();
 
-        return view('reservation.index', compact('information'));
+        return view('reservation.index', compact('information', 'IsOrNotAdmin'));
     }
 }
