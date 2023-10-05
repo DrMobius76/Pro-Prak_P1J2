@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/control-reservation', [ReservationController::class, 'index'])->name('reservation.index');
+Route::get('/control-reservation', [ReservationController::class, 'reservationView'])->name('reservation.view');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

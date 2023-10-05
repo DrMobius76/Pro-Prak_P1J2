@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
-    public function index()
+    public function reservationView()
     {
         $information = Reservation::indexReservation()->get();
         $IsOrNotAdmin = User::IsOrNotAdmin()->get();
