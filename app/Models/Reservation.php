@@ -10,6 +10,14 @@ class Reservation extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'days',
+        'date',
+        'time',
+        'table',
+        'child_chairs'
+    ];
+
     public function scopeIndexReservation(Builder $information): void
     {
         $information
