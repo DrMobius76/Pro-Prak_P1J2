@@ -13,6 +13,6 @@ class ReservationController extends Controller
         $information = Reservation::indexReservation()->get();
         $IsOrNotAdmin = User::IsOrNotAdmin()->get();
 
-        return view('reservation.index', compact('information', 'IsOrNotAdmin'));
+        return view('reservation.view', compact('information', 'IsOrNotAdmin'));
     }
 }
