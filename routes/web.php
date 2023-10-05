@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/control-reservation', [ReservationController::class, 'index'])->name('reservation.index');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
