@@ -35,4 +35,10 @@ class ReservationController extends Controller
 
         return redirect(route('reservation.view'));
     }
+
+    public function reservationEdit(Reservation $info)
+    {
+        // dd($info);
+        return view('reservation.edit', compact('info'));
+    }
 }

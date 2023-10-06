@@ -25,6 +25,8 @@ Route::get('/reservation/create', [ReservationController::class, 'reservationCre
 
 Route::post('/reservation/view', [ReservationController::class, 'reservationStore'])->name('reservation.store');
 
+Route::get('/reservation/{info}/edit', [ReservationController::class, 'reservationEdit'])->name('reservation.edit');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

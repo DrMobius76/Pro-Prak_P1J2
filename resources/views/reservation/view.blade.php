@@ -16,6 +16,7 @@
                 <th>Time:</th>
                 <th>Table:</th>
                 <th>Child Chairs:</th>
+                <th>update:</th>
             </tr>
         </thead>
         <tbody>
@@ -26,6 +27,9 @@
                 <td>{{$info->time}}</td>
                 <td>{{$info->table}}</td>
                 <td>{{$info->child_chairs}}</td>
+                <td>
+                    <a href="{{route('reservation.edit', ['info' => $info])}}">wijzigen</a>
+                </td>
             </tr>
             @endforeach
         </tbody>
