@@ -18,24 +18,53 @@ body {
 }
 
 #nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
     background-color: $lightBrown;
-    ul, li {
+    text-align: center;
+
+    #logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    ul {
+        display: flex;
         padding: 0;
         margin: 0;
-        img{
-            width: 34px;
-            height: 34px;
-        }
+        list-style: none;
+
+        li a {
+                display: block;
+                padding: 1rem;
+            }
     }
-    a {
-        color: $textColor;
-        text-decoration: none;
-    }
+
+    // ul, li {
+    //     padding: 0;
+    //     margin: 0;
+    //     img{
+    //         width: 34px;
+    //         height: 34px;
+    //     }
+    //         a {
+    //             color: $textColor;
+    //             text-decoration: none;
+    //             text-align: center;
+    //         }
+    // }
 }
 
 #content{
     width: 101px;
     height: 101px;
-    background-color: $mediumBrown;
-    box-shadow: 10px 5px 5px $textColor;;
+    background-color: $teal;
+    box-shadow: 10px 5px 5px $textColor;
 }

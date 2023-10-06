@@ -13,14 +13,18 @@
     </head>
     <body class="antialiased">
        <div id="nav">
+           <img id="logo" src="img/logo.svg" alt="Logo">
             <ul>
-                <img src="resources/img" alt="">
-                <a href="">Homepage</a>
-                <a href="">Menu</a>
-                <a href="">About Us</a>
-                <a href="">Login/Register</a>
+                <li><a href="">Homepage</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Login/Register</a></li>
             </ul>
        </div>
-       <div id="content"></div>
+       <!-- <div id="content"></div> -->
+       <main>
+            <h1></h1>
+            <article></article>
+       </main>
     </body>
 </html>
