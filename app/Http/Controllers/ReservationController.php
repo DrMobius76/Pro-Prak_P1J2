@@ -41,4 +41,19 @@ class ReservationController extends Controller
         // dd($info);
         return view('reservation.edit', compact('info'));
     }
+
+    public function reservationUpdate(Reservation $info, Request $request)
+    {
+        $data = $request->validate([
+            'days' => 'required',
+            'date' => 'required',
+            'time' => 'required',
+            'table' => 'required',
+            'child_chairs' => 'nullable'
+        ]);
+
+        $info->update($data);
+
+        return redirect(route('reservation.view'));
+    }
 }
