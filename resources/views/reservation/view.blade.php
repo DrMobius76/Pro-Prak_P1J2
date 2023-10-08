@@ -12,13 +12,13 @@
     <table border="1">
         <thead>
             <tr>
-                <th>Days:</th>
-                <th>Date:</th>
-                <th>Time:</th>
-                <th>Table:</th>
-                <th>Child Chairs:</th>
-                <th>Update:</th>
-                <th>Delete:</th>
+                <th>Dagen:</th>
+                <th>Datums:</th>
+                <th>Tijden:</th>
+                <th>Tafels:</th>
+                <th>Kinderstoelen:</th>
+                <th>Wijzigen:</th>
+                <th>Verwijderen:</th>
             </tr>
         </thead>
         <tbody>
