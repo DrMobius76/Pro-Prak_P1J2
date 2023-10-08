@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a href="{{route('reservation.create')}}">maak een reservering</a>
     <table border="1">
         <thead>
             <tr>
@@ -16,7 +17,8 @@
                 <th>Time:</th>
                 <th>Table:</th>
                 <th>Child Chairs:</th>
-                <th>update:</th>
+                <th>Update:</th>
+                <th>Delete:</th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +31,9 @@
                 <td>{{$info->child_chairs}}</td>
                 <td>
                     <a href="{{route('reservation.edit', ['info' => $info])}}">wijzigen</a>
+                </td>
+                <td>
+                    <a href="{{route('reservation.delete', ['info' => $info])}}">verwijderen</a>
                 </td>
             </tr>
             @endforeach

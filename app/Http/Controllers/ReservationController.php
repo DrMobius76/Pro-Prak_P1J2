@@ -56,4 +56,11 @@ class ReservationController extends Controller
 
         return redirect(route('reservation.view'));
     }
+
+    public function reservationDelete(Reservation $info)
+    {
+        $info->delete();
+
+        return redirect(route('reservation.view'));
+    }
 }

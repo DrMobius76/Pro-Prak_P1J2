@@ -29,6 +29,8 @@ Route::get('/reservation/{info}/edit', [ReservationController::class, 'reservati
 
 Route::put('/reservation/{info}/update', [ReservationController::class, 'reservationUpdate'])->name('reservation.update');
 
+Route::get('/reservation/{info}/delete', [ReservationController::class, 'reservationDelete'])->name('reservation.delete');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
