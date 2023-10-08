@@ -27,6 +27,8 @@ Route::post('/reservation/view', [ReservationController::class, 'reservationStor
 
 Route::get('/reservation/{info}/edit', [ReservationController::class, 'reservationEdit'])->name('reservation.edit');
 
+Route::put('/reservation/{info}/update', [ReservationController::class, 'reservationUpdate'])->name('reservation.update');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

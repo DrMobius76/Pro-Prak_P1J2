@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form method="post" action="{{route('reservation.view', ['info' => $info])}}">
+    <form method="post" action="{{route('reservation.update', ['info' => $info])}}">
         @csrf
         @method('put')
         <div>
