@@ -17,7 +17,7 @@
         </div>
         <div>
             <label for="date">Datum:</label>
-            <input class="edit" type="text" name="date" placeholder="datum -> 2023-01-01">
+            <input class="edit" type="date" name="date" placeholder="datum">
         </div>
         <div>
             <label for="time">Tijd:</label>
