@@ -46,25 +46,20 @@ body {
                 padding: 1rem;
             }
     }
-
-    // ul, li {
-    //     padding: 0;
-    //     margin: 0;
-    //     img{
-    //         width: 34px;
-    //         height: 34px;
-    //     }
-    //         a {
-    //             color: $textColor;
-    //             text-decoration: none;
-    //             text-align: center;
-    //         }
-    // }
 }
 
-#content{
-    width: 101px;
-    height: 101px;
-    background-color: $teal;
-    box-shadow: 10px 5px 5px $textColor;
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    #title{
+        color: $teal;
+        text-align: center;
+    }
+        .content {
+            width: 50%;
+            background-color: $teal;
+            box-shadow: 10px 5px 5px $textColor;
+        }
 }

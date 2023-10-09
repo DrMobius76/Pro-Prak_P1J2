@@ -21,10 +21,9 @@
                 <li><a href="">Login/Register</a></li>
             </ul>
        </div>
-       <!-- <div id="content"></div> -->
        <main>
-            <h1></h1>
-            <article></article>
-       </main>
+            <h1 id="title">About us</h1>
+            <article class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus voluptatibus ex quia libero labore necessitatibus fuga perspiciatis similique quasi impedit corporis voluptate, nostrum eveniet reiciendis, corrupti cum harum excepturi?</article>
+        </main>
     </body>
 </html>
