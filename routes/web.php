@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/reservation/view', [ReservationController::class, 'reservationView'])->name('reservation.view');
+
+Route::get('/reservation/create', [ReservationController::class, 'reservationCreate'])->name('reservation.create');
+
+Route::post('/reservation/view', [ReservationController::class, 'reservationStore'])->name('reservation.store');
+
+Route::get('/reservation/{info}/edit', [ReservationController::class, 'reservationEdit'])->name('reservation.edit');
+
+Route::put('/reservation/{info}/update', [ReservationController::class, 'reservationUpdate'])->name('reservation.update');
+
+Route::get('/reservation/{info}/delete', [ReservationController::class, 'reservationDelete'])->name('reservation.delete');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
