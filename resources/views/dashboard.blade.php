@@ -1,3 +1,7 @@
+<head>
+    @vite(['resources/scss/auth/dashboard.scss', 'resources/css/auth/dashboard.css'])
+</head>
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
@@ -14,4 +18,20 @@
             </div>
         </div>
     </div>
+
+    <div id="button-container">
+        <div id="button-subcontainer">
+            <a href="#">
+                <div id="menu">
+                    <p>Verander het menu</p>
+                </div>
+            </a>
+            <a href="#">
+                <div id="reservation">
+                    <p>Bekijk & verander reserveringen</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
 </x-app-layout>

@@ -18,7 +18,8 @@
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
             <div>
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <!-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> LARAVEL STANDARD LOGO -->
+                    <img src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="" class="h-40">
                 </a>
             </div>
 
