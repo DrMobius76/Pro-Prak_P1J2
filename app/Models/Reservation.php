@@ -22,7 +22,9 @@ class Reservation extends Model
         //* this is the table column
         'table',
         //* this is the child_chairs column
-        'child_chairs'
+        'child_chairs',
+        //* this is the people column
+        'people'
     ];
     //* this function gets all the information from the reservation table and saves the data in the parameters of the function
     public function scopeIndexReservation(Builder $information): void

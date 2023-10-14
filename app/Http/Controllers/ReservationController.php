@@ -35,7 +35,8 @@ class ReservationController extends Controller
             'date' => 'required',
             'time' => 'required',
             'table' => 'required',
-            'child_chairs' => 'nullable'
+            'child_chairs' => 'nullable',
+            'people' => 'required'
         ]);
 
         //* this make a reservation in the reservation table with the data from $data that got send from the form
@@ -62,7 +63,8 @@ class ReservationController extends Controller
             'date' => 'required',
             'time' => 'required',
             'table' => 'required',
-            'child_chairs' => 'nullable'
+            'child_chairs' => 'nullable',
+            'people' => 'required'
         ]);
 
         //* updates the row that the user selected with the data that the user send with the form
