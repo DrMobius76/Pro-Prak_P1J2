@@ -39,6 +39,11 @@
             <label for="child_chairs">Kinderstoelen:</label>
             <input class="edit" type="text" name="child_chairs" placeholder="kinderstoelen" value="{{$info->child_chairs}}">
         </div>
+        <!-- this is for the amount of people coming -->
+        <div>
+            <label for="people">Aantal mensen:</label>
+            <input class="edit" type="number" name="people" placeholder="aantal mensen" value="{{$info->people}}">
+        </div>
         <!-- when the users clicks on this input button the form is going to send the data -->
         <div>
             <input type="submit" value="Update">

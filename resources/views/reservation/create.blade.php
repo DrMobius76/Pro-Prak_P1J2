@@ -39,6 +39,11 @@
             <label for="child_chairs">Kinderstoelen:</label>
             <input class="edit" type="text" name="child_chairs" placeholder="kinderstoelen">
         </div>
+        <!-- this is for the amount of people coming field on the page -->
+        <div>
+            <label for="people">Aantal mensen:</label>
+            <input class="edit" type="number" name="people" placeholder="aantal mensen">
+        </div>
         <!-- when the users clicks on this input button then the form gets send -->
         <div>
             <input type="submit" value="opslaan">
