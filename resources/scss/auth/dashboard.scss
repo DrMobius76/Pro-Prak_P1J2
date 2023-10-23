@@ -1,10 +1,11 @@
 main {
-    #button-container {
+    .button-container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 5rem;
-        #button-subcontainer {
+        margin: 3rem;
+        .button-subcontainer {
             width: 100%;
             max-width: 1200px;
             margin-left: 3rem;
@@ -14,9 +15,8 @@ main {
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            background-color: rgb(31 41 55);
             border-radius: 0.5rem;
-            #menu, #reservation {
+            .menu, .reservation {
                 border-radius: 0.5rem;
                 height: 2.5rem;
                 max-width: 25vw;

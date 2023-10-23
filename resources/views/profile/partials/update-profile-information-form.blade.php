@@ -1,11 +1,11 @@
 <section>
     <header>
         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-            {{ __('Profile Information') }}
+            {{ __('Profiel informatie') }}
         </h2>
 
         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-            {{ __("Update your account's profile information and email address.") }}
+            {{ __("Verander jouw profiel informatie en email gegevens.") }}
         </p>
     </header>
 
@@ -31,16 +31,16 @@
             @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
             <div>
                 <p class="text-sm mt-2 text-gray-800 dark:text-gray-200">
-                    {{ __('Your email address is unverified.') }}
+                    {{ __('Je email adres is nog niet geverifieerd.') }}
 
                     <button form="send-verification" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
-                        {{ __('Click here to re-send the verification email.') }}
+                        {{ __('Klik hier om de verificatie email opnieuw te versturen.') }}
                     </button>
                 </p>
 
                 @if (session('status') === 'verification-link-sent')
                 <p class="mt-2 font-medium text-sm text-green-600 dark:text-green-400">
-                    {{ __('A new verification link has been sent to your email address.') }}
+                    {{ __('Een nieuwe verificatie link is verzonden naar jouw email adres.') }}
                 </p>
                 @endif
             </div>
