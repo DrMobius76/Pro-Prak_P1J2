@@ -18,9 +18,15 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->string('phone');
+            $table->date('birthdate');
+            $table->string('residence');
+            $table->string('street');
+            $table->string('housenumber');
+            $table->string('zipcode');
             $table->boolean('isAdmin');
             $table->string('notes')->nullable();
+            $table->rememberToken();
             $table->timestamps();
         });
     }
