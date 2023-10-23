@@ -25,6 +25,5 @@
             <h1 id="title">About us</h1>
             <article class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus voluptatibus ex quia libero labore necessitatibus fuga perspiciatis similique quasi impedit corporis voluptate, nostrum eveniet reiciendis, corrupti cum harum excepturi?</article>
         </main>
-        <h1>WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGh</h1>
     </body>
 </html>
