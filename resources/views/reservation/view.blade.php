@@ -27,10 +27,16 @@
                 <th>Kinderstoelen:</th>
                 <!-- for the people column -->
                 <th>People:</th>
+                <!-- this checks if the users that is logged in if that person is a admin -->
+                @if (Auth::user()->isAdmin == 1)
                 <!-- this is the table head for the admin that he/she can edit the reservation -->
                 <th>Wijzigen:</th>
                 <!-- this is the table head for the admin so they can delete a reservation -->
                 <th>Verwijderen:</th>
+                <!-- otherwise it doesn't show the delete and edit to the user -->
+                @else
+                <!-- this ends the if statement in blade -->
+                @endif
             </tr>
         </thead>
         <tbody>
@@ -44,12 +50,18 @@
                 <td>{{$info->table}}</td>
                 <td>{{$info->child_chairs}}</td>
                 <td>{{$info->people}}</td>
+                <!-- this check if the user is a admin if the user is admin then the page shows the edit and delete links -->
+                @if (Auth::user()->isAdmin == 1)
                 <td>
                     <a href="{{route('reservation.edit', ['info' => $info])}}">wijzigen</a>
                 </td>
                 <td>
                     <a href="{{route('reservation.delete', ['info' => $info])}}">verwijderen</a>
                 </td>
+                <!-- doesn't show the edit and delete links to the user that is not a admin -->
+                @else
+                <!-- this is the end of the if statement -->
+                @endif
             </tr>
             @endforeach
         </tbody>
