@@ -17,5 +17,3 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/node_modules/.vite
-/node_modules/.vite/deps
