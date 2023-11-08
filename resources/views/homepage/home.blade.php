@@ -22,7 +22,7 @@
                     <div class="header">
                         <div class="logo">
                             <div class="form-group">
-                                <label for="Image"><a href="./Homepage.php"><img id="rocam-logo" src="./Rocambolesque-logo-DEF.png" alt="Image"></a></label>
+                                <label for="Image"><a href="./Homepage.php"><img id="rocam-logo" src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="Image"></a></label>
                                 <div class="navbar">
                                     <a href="./Homepage.php"><b>Menu</b></a>
                                     <a href="./Homepage.php"><b>Make reservation</b></a>
@@ -80,7 +80,7 @@
             <div class="col-6">
                 <div class="linkimages">
                     <div class="form-group">
-                        <label for="Image"><a href="./Homepage.php"><img id="twitter-image" src="./Twitter-logo.png" alt="Image"></a></label>
+                        <label for="Image"><a href="./Homepage.php"><img id="twitter-image" src="/images/algemeen/Twitter-logo.png" alt="Image"></a></label>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
             <div class="col-6">
                 <div class="linkimages">
                     <div class="form-group">
-                        <label for="Image"><a href="./Homepage.php"><img id="instagram-image" src="./instagram.png" alt="Image"></a></label>
+                        <label for="Image"><a href="./Homepage.php"><img id="instagram-image" src="/images/algemeen/instagram.png" alt="Image"></a></label>
                     </div>
                 </div>
             </div>
