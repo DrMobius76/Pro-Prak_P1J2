@@ -875,7 +875,12 @@
                     <div class="col-6">
                         <div class="block">
                             <div class="form-group">
-                                <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
+                                @foreach($voorgerechts as $voorgerechts)
+                                <tr>
+                                    <td>{{$voorgerechts->product_name}}</td>
+                                    <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
+                                    <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
+                                </tr>
                             </div>
                         </div>
                     </div>
