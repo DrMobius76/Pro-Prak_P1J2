@@ -34,28 +34,26 @@ class RegisteredUserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            //'gender' => ['required', 'string'],
             'phone' => ['required', 'string'],
             'birthdate' => ['required', 'date'],
             'residence' => ['required', 'string'],
             'street' => ['required', 'string'],
             'housenumber' => ['required', 'string'],
             'zipcode' => ['required','string'],
-            //'isAdmin' => ['boolean'],   // FIX / CONTINUE THIS
+            'isAdmin' => ['boolean']
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            //'gender' => $request->gender,
             'phone' => $request->phone,
             'birthdate' => $request->birthdate,
             'residence' => $request->residence,
             'street' => $request->street,
             'housenumber' => $request->housenumber,
             'zipcode' => $request->zipcode,
-            //'isAdmin' => $request->isAdmin
+            'isAdmin' => $request->isAdmin
         ]);
 
         event(new Registered($user));

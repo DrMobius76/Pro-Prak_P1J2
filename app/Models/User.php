@@ -26,7 +26,8 @@ class User extends Authenticatable
         'residence',
         'street',
         'housenumber',
-        'zipcode'
+        'zipcode',
+        'isAdmin'
     ];
 
     /**

@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -18,14 +19,13 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            // $table->string('gender');
             $table->string('phone');
             $table->date('birthdate');
             $table->string('residence');
             $table->string('street');
             $table->string('housenumber');
             $table->string('zipcode');
-            // $table->boolean('isAdmin');
+            $table->boolean('isAdmin');
             $table->timestamps();
         });
     }
