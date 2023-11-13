@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home_page/home');
 });
 //* this sends the user to the view page and adds the reservationView function to the page
 Route::get('/reservation/view', [ReservationController::class, 'reservationView'])->name('reservation.view');
