@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -13,12 +14,29 @@ return new class extends Migration
     {
         Schema::create('soepgerechts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('product_name');
+            $table->string('soupName');
             $table->string('price');
             $table->string('description');
             $table->string('ingredients');
             $table->timestamps();
         });
+        DB::table('soepgerechts')->insert([
+            [
+                'id' => 1,
+                'soupName' => 'Franse Uiensoep',
+                'price' => '€9,99',
+                'description' => 'Een hartige soep op basis van uien, met gegratineerde kaas bovenop en een stukje knapperig stokbrood.',
+                'ingredients' => 'Uien, bouillon, stokbrood, kaas'
+            ],
+
+            [
+                'id' => 2,
+                'soupName' => 'Tomatensoep',
+                'price' => '€7,99',
+                'description' => 'Een warme, hartige tomatensoep bereid met rijpe tomaten, uien, knoflook en kruiden. Geserveerd met een vleugje room en verse basilicumblaadjes.',
+                'ingredients' => 'Tomaten, uien, knoflook, groentebouillon, room, basilicum, kruiden'
+            ]
+        ]);
     }
 
     /**

@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -13,12 +14,29 @@ return new class extends Migration
     {
         Schema::create('voorgerechts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('product_name');
+            $table->string('startersName');
             $table->string('price');
             $table->string('description');
             $table->string('ingredients');
             $table->timestamps();
         });
+        DB::table('voorgerechts')->insert([
+            [
+                'id' => 1,
+                'startersName' => 'Caprese Salade',
+                'price' => '€10,99',
+                'description' => 'Een klassieke Italiaanse salade met plakjes sappige tomaten, verse mozzarella, basilicumblaadjes en een scheutje balsamicoazijn en olijfolie.',
+                'ingredients' => 'Tomaten, mozzarella, basilicum, balsamicoazijn, olijfolie'
+            ],
+
+            [
+                'id' => 2,
+                'startersName' => 'Garnalencocktail',
+                'price' => '€21,99',
+                'description' => 'Gepelde garnalen geserveerd op een bedje van knapperige ijsbergsla, met een romige cocktailsaus en een partje citroen.',
+                'ingredients' => 'Gepelde garnalen, ijsbergsla, cocktailsaus, citroen'
+            ]
+        ]);
     }
 
     /**
