@@ -1,0 +1,135 @@
+.displayblock {
+    display: block;
+}
+
+.block {
+    margin-left: 10vw;
+    margin-top: 25vh;
+    padding: 2rem 2.5rem;
+    width: 27vw;
+    height: 40vh;
+    background-color: #cf9d64;
+    overflow: visible;
+    border-radius: 45px;
+    text-align: center
+}
+
+.imageblock {
+    display: block;
+}
+
+.image {
+    margin-left: 10vw;
+    margin-top: 25vh;
+    width: 30vw;
+    height: 35vh;
+    overflow: visible;
+    border-radius: 45px;
+    text-align: center
+}
+
+.image>.form-group>label>img {
+    width: auto;
+    height: 50vh;
+    border-radius: 45px;
+}
+
+.fronttext {
+    margin-left: 45%;
+    color: #60c9ad;
+}
+
+.homepageinfo {
+    display: flex;
+}
+
+.header {
+    margin-left: -45vw;
+    margin-top: -2.5vh;
+    padding: 2rem 2.5rem;
+    width: 93vw;
+    height: 4vh;
+    background-color: #60c9ad;
+    overflow: visible;
+    text-align: center
+}
+
+.logo>.form-group>label>img {
+    margin-left: -90vw;
+    margin-top: -2vh;
+    width: auto;
+    height: 10vh;
+    overflow: visible;
+    border-radius: 45px;
+    text-align: center
+}
+
+.navbar {
+    overflow: hidden;
+    margin-top: -11vh;
+    margin-left: 6vw;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #313131;
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 3vh 2vw;
+    text-decoration: none;
+    margin-right: 1vw;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: #efefef;
+}
+
+.login {
+    overflow: hidden;
+    margin-top: -7vh;
+    margin-left: 0vw;
+}
+
+.login a {
+    float: right;
+    display: block;
+    color: #d5cfcd;
+    background-color: #3e261c;
+    text-align: center;
+    padding: 1vh 0.5vw;
+    text-decoration: none;
+    margin-right: 1vw;
+    border-radius: 10px;
+}
+
+.login a:hover {
+    background-color: #58392c;
+}
+
+.linkimages {
+    margin-top: 0vh;
+    margin-left: 43vw;
+    width: 5vw;
+    height: 5vh;
+    overflow: visible;
+}
+
+#twitter-image {
+    width: 5vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
+}
+
+#instagram-image {
+    width: 5vw;
+    margin-left: 5vw;
+    margin-top: -5vh;
+}
+
+#rocam-logo {
+    height: 10vh;
+    margin-left: -90vw;
+    margin-top: -2vh;
+}
