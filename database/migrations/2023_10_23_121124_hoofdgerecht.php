@@ -35,6 +35,14 @@ return new class extends Migration
                 'price' => '€29,99',
                 'description' => 'Een klassiek Frans stoofgerecht met mals rundvlees, wortelen, uien en champignons, gestoofd in rode wijn en op smaak gebracht met kruiden. Het wordt geserveerd met aardappelpuree of vers brood.',
                 'ingredients' => 'Rundvlees, spek, champignons, uien, wortelen, rode wijn, bloem, boter, tijm, laurierblaadjes'
+            ],
+
+            [
+                'id'=> 3,
+                'mainName' => 'Zalmfilet met citroen-dille saus, geserveerd met gestoomde groenten',
+                'price'=>'€33,99',
+                'description' => 'Een elegant hoofdgerecht waar malse zalmfilet de hoofdrol speelt. De vis, subtiel gegrild, wordt gekust door een zijdezachte citroen-dille saus die de smaak verrijkt. Aan de zijde schitteren gestoomde groenten in hun knapperige glorie.',
+                'ingredients' => 'Zalm, Griekse yoghurt, Citroensap, Dille, Mayonaise, Dijon Mosterd, gestoomde groenten & olijfolie'
             ]
         ]);
     }

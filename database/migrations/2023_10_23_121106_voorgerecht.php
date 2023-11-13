@@ -35,6 +35,14 @@ return new class extends Migration
                 'price' => '€21,99',
                 'description' => 'Gepelde garnalen geserveerd op een bedje van knapperige ijsbergsla, met een romige cocktailsaus en een partje citroen.',
                 'ingredients' => 'Gepelde garnalen, ijsbergsla, cocktailsaus, citroen'
+            ],
+
+            [
+                'id'=> 3,
+                'startersName' => 'Carpaccio van rundvlees met rucola en Parmezaanse kaas',
+                'price'=>'€28,99',
+                'description' => 'Dit elegante gerecht biedt een perfecte balans tussen mals rundvlees, pittige rucola en de hartige smaak van Parmezaanse kaas.',
+                'ingredients' => 'rundvlees, rucola, Parmezaanze kaas, olijfolie & Balsamicoazijn'
             ]
         ]);
     }

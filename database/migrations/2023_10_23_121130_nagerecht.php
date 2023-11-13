@@ -35,6 +35,14 @@ return new class extends Migration
                 'price' => '€12,99',
                 'description' => 'Tarte Tatin is een omgekeerde karamelappeltaart. Het wordt gemaakt door appels te karameliseren in suiker en boter op het fornuis en vervolgens bedekt met een laagje bladerdeeg en gebakken tot het deeg goudbruin is.',
                 'ingredients' => 'Appels, suiker, boter, bladerdeeg'
+            ],
+
+            [
+                'id'=> 3,
+                'startersName' => 'Tiramisu',
+                'price'=> '€17,99',
+                'description'=> 'Een hemels Italiaans dessert met lagen van romige mascarpone, doordrenkt met koffie en omhuld door zachte lange vingers.',
+                'ingredients' => 'Marscapone, eieren, suiker, espresso, lange vingers, cacaopoeder'
             ]
         ]);
     }
