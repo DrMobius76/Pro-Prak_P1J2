@@ -99,3 +99,31 @@
       flex-wrap: wrap;
       padding: 2rem 10rem;
     }
+
+#homepage-title {
+  margin-top: 10rem;
+  margin-left: 39rem;
+
+  h1 {
+    color: #60c9ad;
+  }
+}
+
+#info-box {
+  margin-left: 12rem;
+  padding: 2rem 2.5rem;
+  height: 17rem;
+  background-color: #cf9d64;
+  width: 25rem;
+}
+
+#info-box,
+#restaurant-img {
+  margin-top: 7rem;
+  border-radius: 3rem;
+}
+
+#restaurant-img {
+  margin-left: 5rem;
+  width: 30rem;
+}
