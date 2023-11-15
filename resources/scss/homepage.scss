@@ -9,55 +9,6 @@
       display: block;
     }
     
-    .block {
-      margin-left: 10vw;
-      margin-top: 15vh;
-      padding: 2rem 2.5rem;
-      width: 27vw;
-      height: 39vh;
-      background-color:#cf9d64;
-      overflow:visible;
-      border-radius:45px;
-      text-align:center
-    }
-    
-    .imageblock {
-      display: block;
-    }
-    
-    .image {
-      margin-left: 10vw;
-      margin-top: 15vh;
-      width: 30vw;
-      height: 35vh;
-      overflow: visible;
-      border-radius: 45px;
-      text-align: center;
-    
-      .form-group {
-        label {
-          img {
-            width: auto;
-            height: 50vh;
-            border-radius: 45px;
-          }
-        }
-      }
-    }
-    
-    .fronttext {
-      margin-left: 40%;
-      color: #60c9ad;
-    }
-  
-    .fronttext {
-      .form-group {
-        h1 {
-          font-size: 2rem;
-        }
-      }
-    }
-    
     .homepageinfo {
       display: flex;
     }
@@ -71,22 +22,6 @@
       background-color:#60c9ad;
       overflow:visible;
       text-align:center
-    }
-    
-    .logo {
-      .form-group {
-        label {
-          img {
-            margin-left: -90vw;
-            margin-top: -2vh;
-            width: auto;
-            height: 10vh;
-            overflow: visible;
-            border-radius: 45px;
-            text-align: center;
-          }
-        }
-      }
     }
     
     .navbar {
@@ -159,9 +94,6 @@
       margin-top: -2vh;
     }
     
-    .rocambolesque-text {
-      margin-top: 15vh;
-    }
     .blockrow {
       display: flex;
       flex-wrap: wrap;
