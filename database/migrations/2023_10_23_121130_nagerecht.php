@@ -39,7 +39,7 @@ return new class extends Migration
 
             [
                 'id'=> 3,
-                'startersName' => 'Tiramisu',
+                'dessertName' => 'Tiramisu',
                 'price'=> '€17,99',
                 'description'=> 'Een hemels Italiaans dessert met lagen van romige mascarpone, doordrenkt met koffie en omhuld door zachte lange vingers.',
                 'ingredients' => 'Marscapone, eieren, suiker, espresso, lange vingers, cacaopoeder'
