@@ -12,6 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite(['resources/scss/menu/menu.scss', 'resources/css/menu/menu.css'])
 
+
 </head>
 
 <body>
@@ -58,12 +59,7 @@
                     <div class="col-6">
                         <div class="block">
                             <div class="form-group">
-                                <!-- @foreach($voorgerechts as $voorgerechts)
-                                <tr>
-                                    <td>{{$voorgerechts->name}}</td> -->
                                 <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
-                                <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
-                                <!-- </tr> -->
                             </div>
                         </div>
                     </div>
@@ -127,5 +123,3 @@
         </div>
     </div>
 </body>
-
-</html>
