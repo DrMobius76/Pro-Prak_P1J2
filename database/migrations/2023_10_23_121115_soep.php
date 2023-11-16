@@ -38,9 +38,9 @@ return new class extends Migration
             ],
 
             [
-                'id'=> 3,
-                'startersName' => 'Prei-Room soep',
-                'price'=>'€10,99',
+                'id' => 3,
+                'soupName' => 'Prei-Room soep',
+                'price' => '€10,99',
                 'description' => 'Deze soep heeft een zachte, milde uiensmaak van prei, gecombineerd met de romigheid van aardappelen.',
                 'ingredients' => 'preien, uien, aardappelen, groentebouillon, olijfolie, kruiden & room'
             ]

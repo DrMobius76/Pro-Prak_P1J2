@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 
 class MenuItemsController extends Controller
 {
-    public function index(){
-        $menuItems = Person::all();
+    public function index()
+    {
+        $menuItems = MenuItems::all();
         return view("menu.menu", ['' => $menuItems]);
     }
 }
