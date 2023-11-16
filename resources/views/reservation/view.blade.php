@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    @vite(['resources/scss/ReserveringenHomePage.scss'])
+
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <a href="{{route('reservation.create')}}">maak een reservering</a>
-    <table border="1">
+    <main id="viewMenu">
+<div>
+
+    </div>
+    <h1>Reserveringen:</h1>
+    <table>
         <thead>
             <tr>
                 <th>Dagen:</th>
@@ -39,6 +48,9 @@
             @endforeach
         </tbody>
     </table>
+    <a href="{{route('reservation.create')}}">maak een reservering</a>
+</main>
+
 </body>
 
 </html>
