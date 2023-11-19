@@ -30,6 +30,10 @@ Route::get('/reservation/{info}/edit', [ReservationController::class, 'reservati
 Route::put('/reservation/{info}/update', [ReservationController::class, 'reservationUpdate'])->name('reservation.update');
 //* this sends the user to the view page and deletes the reservation and adds the reservationDelete function to the page
 Route::get('/reservation/{info}/delete', [ReservationController::class, 'reservationDelete'])->name('reservation.delete');
+//*this sends the user to the aboutUs page
+Route::get('/aboutUs', function () {
+    return view('about_us/aboutUs');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
