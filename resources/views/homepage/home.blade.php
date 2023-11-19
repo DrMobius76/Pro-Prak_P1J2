@@ -12,6 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite(['resources/scss/homepage.scss', 'resources/css/homepage.css'])
 
+
 </head>
 
 <body>
@@ -22,14 +23,14 @@
                     <div class="header">
                         <div class="logo">
                             <div class="form-group">
-                                <label for="Image"><a href="./Homepage.php"><img id="rocam-logo" src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="Image"></a></label>
+                                <label for="Image"><a href="#"><img id="rocam-logo" src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="Image"></a></label>
                                 <div class="navbar">
-                                    <a href="./Homepage.php"><b>Menu</b></a>
-                                    <a href="./Homepage.php"><b>Make reservation</b></a>
-                                    <a href="./Homepage.php"><b>About us</b></a>
+                                    <a href="#"><b>Menu</b></a>
+                                    <a href="#"><b>Make reservation</b></a>
+                                    <a href="#"><b>About us</b></a>
                                 </div>
                                 <div class="login">
-                                    <a href="./Homepage.php"><b>Login</b></a>
+                                    <a href="#"><b>Login</b></a>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +81,7 @@
             <div class="col-6">
                 <div class="linkimages">
                     <div class="form-group">
-                        <label for="Image"><a href="./Homepage.php"><img id="twitter-image" src="/images/algemeen/Twitter-logo.png" alt="Image"></a></label>
+                        <label for="Image"><a href="#"><img id="twitter-image" src="/images/algemeen/Twitter-logo.png" alt="Image"></a></label>
                     </div>
                 </div>
             </div>
@@ -91,10 +92,11 @@
             <div class="col-6">
                 <div class="linkimages">
                     <div class="form-group">
-                        <label for="Image"><a href="./Homepage.php"><img id="instagram-image" src="/images/algemeen/instagram.png" alt="Image"></a></label>
+                        <label for="Image"><a href="#"><img id="instagram-image" src="/images/algemeen/instagram.png" alt="Image"></a></label>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @include('layouts.footer')
 </body>
