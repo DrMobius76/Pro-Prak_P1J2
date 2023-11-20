@@ -20,7 +20,7 @@
                 @csrf
                 @method('post')
 
-                <div class="reservationForm">
+                <div>
                     <div class="createStyling">
                         <label for="days">Dag:</label>
                         <input class="edit" type="text" name="days" placeholder="dagen">
