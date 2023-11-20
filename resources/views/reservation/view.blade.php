@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    @vite(['resources/scss/ReserveringenHomePage.scss'])
+
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <!-- this is a link to the create page so you can make a reservation, it calls out to the name of the route -->
-    <a href="{{route('reservation.create')}}">maak een reservering</a>
-    <!-- gives the table a basic line styling -->
-    <table border="1">
+    <main id="viewMenu">
+<div>
+
+    </div>
+    <h1>Reserveringen:</h1>
+    <table>
         <thead>
             <!-- this is een row in the table for tableheads with all the tableheads for the database -->
             <tr>
@@ -54,6 +60,9 @@
             @endforeach
         </tbody>
     </table>
+    <a href="{{route('reservation.create')}}">maak een reservering</a>
+</main>
+
 </body>
 
 </html>

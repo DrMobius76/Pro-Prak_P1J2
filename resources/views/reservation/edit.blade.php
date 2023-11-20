@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    @vite(['resources/scss/ReserveringenHomePage.scss'])
 </head>
 
 <body>
@@ -49,6 +50,7 @@
             <input type="submit" value="Update">
         </div>
     </form>
+    <img src="{{ asset('img/table-places.png') }}" alt="" id="FotoLayoutTafels">
 </body>
 
 </html>
