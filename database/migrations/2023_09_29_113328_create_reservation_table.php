@@ -19,18 +19,9 @@ return new class extends Migration
             $table->string('time');
             $table->string('table');
             $table->string('child_chairs')->nullable();
+            $table->integer('people');
             $table->timestamps();
         });
-
-        DB::table('reservations')->insert([
-            [
-                'days' => 'monday',
-                'date' => '2020-08-05',
-                'time' => '15:30',
-                'table' => 'table 1',
-                'child_chairs' => '1 chair'
-            ]
-        ]);
     }
 
     /**

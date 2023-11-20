@@ -1,0 +1,65 @@
+$teal : #04BF9D;
+$lightBrown: #D99F6C;
+$mediumBrown: #A6633C;
+$darkBrown: #40261D;
+$lightGrey: #F2F2F2;
+$textColor: #030201;
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    background-color: $lightGrey;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    background-color: $lightBrown;
+    text-align: center;
+
+    #logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li a {
+                display: block;
+                padding: 1rem;
+            }
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    #title{
+        color: $teal;
+        text-align: center;
+    }
+        .content {
+            width: 50%;
+            background-color: $teal;
+            box-shadow: 10px 5px 5px $textColor;
+        }
+}

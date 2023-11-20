@@ -31,6 +31,12 @@ class User extends Authenticatable
         'email',
         'isAdmin',
         'password',
+        'phone',
+        'birthdate',
+        'residence',
+        'street',
+        'housenumber',
+        'zipcode'
     ];
 
     /**
