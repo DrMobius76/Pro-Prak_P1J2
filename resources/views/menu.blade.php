@@ -832,110 +832,38 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6">
-                <div class="fronttext">
-                    <div class="header">
-                        <div class="logo">
-                            <div class="form-group">
-                                <label for="Image"><a href="./Homepage.php"><img id="rocam-logo" src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="Image"></a></label>
-                                <div class="navbar">
-                                    <a href="./menu"><b>Menu</b></a>
-                                    <a href="./Homepage.php"><b>Make reservation</b></a>
-                                    <a href="./Homepage.php"><b>About us</b></a>
-                                </div>
-                                <div class="login">
-                                    <a href="./Homepage.php"><b>Login</b></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="header">
+        <div class="logo">
+            <label for="Image"><a href="./Homepage.php"><img id="rocam-logo" src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="Image"></a></label>
+            <div class="navbar">
+                <a href="./menu"><b>Menu</b></a>
+                <a href="./Homepage.php"><b>Make reservation</b></a>
+                <a href="./Homepage.php"><b>About us</b></a>
+            </div>
+            <div class="login">
+                <a href="./Homepage.php"><b>Login</b></a>
             </div>
         </div>
     </div>
-    <!-- <div class="container mt-5">
-        <div class="row">
-            <div class="col-6">
-                <div class="fronttext">
-                    <div class="form-group">
-                        <div class="rocambolesque-text">
-                            <h1><b>Rocambolesque</b></h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="blockrow">
+        <div class="block">
+            <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
         </div>
-    </div> -->
-    <div class="homepageinfo">
-        <div class="blockrow">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="block">
-                            <div class="form-group">
-                                <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="block">
-                            <div class="form-group">
-                                <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="block">
-                            <div class="form-group">
-                                <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="block">
-                            <div class="form-group">
-                                <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="block">
+            <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
+        </div>
+        <div class="block">
+            <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
+        </div>
+        <div class="block">
+            <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
         </div>
     </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6">
-                <div class="linkimages">
-                    <div class="form-group">
-                        <label for="Image"><a href="./Homepage.php"><img id="twitter-image" src="/images/algemeen/Twitter-logo.png" alt="Image"></a></label>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="linkimages">
+        <label for="Image"><a href="./Homepage.php"><img id="twitter-image" src="/images/algemeen/Twitter-logo.png" alt="Image"></a></label>
     </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6">
-                <div class="linkimages">
-                    <div class="form-group">
-                        <label for="Image"><a href="./Homepage.php"><img id="instagram-image" src="images/algemeen/instagram.png" alt="Image"></a></label>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <div class="linkimages">
+        <label for="Image"><a href="./Homepage.php"><img id="instagram-image" src="images/algemeen/instagram.png" alt="Image"></a></label>
     </div>
 </body>
