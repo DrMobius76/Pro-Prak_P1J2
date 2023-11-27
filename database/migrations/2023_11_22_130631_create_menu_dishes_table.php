@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('menu_dishes', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('order');
+            $table->foreign('menu_id')->references('id')->on('menus')->onDelete('cascade');
+            $table->foreign('dish_id')->references('id')->on('dishes')->onDelete('cascade');
         });
     }
 

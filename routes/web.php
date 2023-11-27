@@ -14,4 +14,4 @@ use App\Http\Controllers\MenuItemsController;
 |
 */
 
-Route::get('/', [MenuItemsController::class,'index'])->name('menu.menu');
+Route::get('/', [MenuDishController::class, 'index'])->name('menu.menu');
