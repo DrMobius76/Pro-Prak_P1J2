@@ -76,27 +76,5 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6">
-                <div class="linkimages">
-                    <div class="form-group">
-                        <label for="Image"><a href="#"><img id="twitter-image" src="/images/algemeen/Twitter-logo.png" alt="Image"></a></label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6">
-                <div class="linkimages">
-                    <div class="form-group">
-                        <label for="Image"><a href="#"><img id="instagram-image" src="/images/algemeen/instagram.png" alt="Image"></a></label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     @include('layouts.footer')
 </body>
