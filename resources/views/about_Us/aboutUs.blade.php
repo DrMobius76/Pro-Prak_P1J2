@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About-us</title>
     @vite(['resources/css/aboutUs.css', 'resources/scss/aboutUs.scss'])
+    @vite(['resources/css/general/footer.css', 'resources/scss/general/footer.scss'])
 </head>
 <body class="antialiased">
-    <!--<div id="nav">
-        <img id="logo" src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="Logo">
-        <ul>
-            <li><a href="">Homepage</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Login/Register</a></li>
-        </ul>
-    </div>-->
+    <!-- [INSERT NAV BAR] -->
     <main>
         <div id="container">
             <div id="leftContainer">
@@ -44,5 +37,6 @@
             </div>
         </div>
     </main>
+    @include('layouts.footer')
 </body>
 </html>

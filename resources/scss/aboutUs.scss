@@ -66,6 +66,9 @@ html, body {
             -webkit-text-fill-color: transparent;
         }
     }
+    footer {
+        margin-top: 1rem;
+    }
 }
 
 // Specific styling for bigger screens
@@ -75,7 +78,9 @@ html, body {
 
         #leftContainer {
             max-width: 45%; // max-width for better readability on larger screens
-            margin: 0.5rem; // Margin for better readability
+            margin-top: 0.5rem; // Margin for better readability
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
         }
 
         #verticalLineDivider {
