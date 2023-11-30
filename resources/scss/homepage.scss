@@ -1,18 +1,22 @@
+//* adds the font and link to the scss file
 @font-face {
     font-family: myFirstFont;
     src: url(sensation_light.woff);
   }
+  //* gives every div a standard font
   div {
     font-family: myFirstFont;
   }
+  //* it shows the content of the element with this styling in a box for these 3 classes
   .displayblock, .navbar>a, .login>a {
       display: block;
     }
-    
+    //* makes these elements a flex box so you can align or space them easier
     .homepageinfo, .blockrow {
       display: flex;
     }
-    
+    //* puts the text in the middle of the element they are in and gives the element a standard background color
+    //* also gives this element a standard width and height and removes some space on the left en top side
     .header {
       margin-left: -40vw;
       margin-top: -2.5vh;
@@ -21,127 +25,133 @@
       background-color:#60c9ad;
       text-align:center;
     }
-
+    //* if the content goes out of the parent elements box then the content wil still be visible
     .header, .linkimages {
       overflow: visible;
     }
-
+    //* adds some space inside on the top and right side of the elements with these id's and classes
     .header, #info-box {
       padding: 2rem 2.5rem;
     }
-    
+    //* if the content of the parent elements box then the content will be hidden
     .navbar, .login {
       overflow: hidden;
     }
-
+//* removes some space on the top so the element goes up more and puts some space on the left side
     .navbar {
       margin-top: -10.5vh;
       margin-left: 8vw;
-    
+    //* puts the element to the left in the element box and gives the text a gray color
+    //* gives the element a light gray background color and some space inside on the left en top of the element
       a {
         float: left;
         color: #313131;
         background-color: #d9d9d9;
         padding: 2.5vh 2vw;
-    
+    //* when the user hovers over the element above then the background color becomes more light gray
         &:hover {
           background-color: #efefef;
         }
       }
     }
-
+//* puts the text in the middle of the element they are in and removes the text decoration
+//* puts some space on the left of these elements and makes the corners more round
     .navbar>a, .login>a {
       text-align: center;
       text-decoration: none;
       margin-right: 1vw;
       border-radius: 10px;
     }
-    
+    //* removes some space on the top so the elements goes more up and sets zero spaces on the left
     .login {
       margin-top: -7vh;
       margin-left: 0vw;
-    
+    //* puts the elements on the right side and gives the text a light gray color
+    //* gives the background of this element a brown color and some space inside on the left and top side
       a {
         float: right;
         color: #d5cfcd;
         background-color: #3e261c;
         padding: 1vh 0.5vw;
-    
+    // * when you hover over this element it makes the background color light brown
         &:hover {
           background-color: #58392c;
         }
       }
     }
-    
+    //* puts some space to the top and the left of this element
+    //* gives the links a standard width and height
     .linkimages {
       margin-top: 10vh;
       margin-left: 43vw;
       width: 5vw;
       height: 5vh;
     }
-
+//* gives the element a standard height and removes some space on the left so the img goes to the left
+//* also removes some space on the top so the img goes up a little bit
     #rocam-logo {
       height: 10vh;
       margin-left: -90vw;
       margin-top: -2vh;
     }
-    
+    //* put the content onto multiple lines on this element
+    //* and gives some space on the inside of the element on the left and top side
     .blockrow {
       flex-wrap: wrap;
       padding: 2rem 10rem;
     }
-
+//* puts some space to the left of the title
 #homepage-title {
   margin-left: 39rem;
-
+//* changed the color to aqua on the h1
   h1 {
     color: #60c9ad;
   }
 }
-
+//* adds space to the top of these elements
 #homepage-title, #info-box, #restaurant-img {
   margin-top: 3.5rem;
 }
-
+//* puts space to the left of this element and a lightbruin background color
+//* gives it a basic height and width
 #info-box {
   margin-left: 12rem;
   height: 17rem;
   background-color: #cf9d64;
   width: 25rem;
 }
-
+//* makes the border more round
 #info-box,
 #restaurant-img {
   border-radius: 3rem;
 }
-
+//* sets a basic width to the element and puts some space to the bottom and left of the element
 #restaurant-img {
   margin-left: 5rem;
   margin-bottom: 3rem;
   width: 31.5rem;
 }
-
+//* this is for the mobile version of the web page and only the styling works for smaller screens
 @media screen and (max-width: 430px) {
-  
+  //* changes the space to 5.5rem instead of 39rem on the left side of the title
   #homepage-title {
     margin-left: 5.5rem;
   }
-
+//* gives the info box a smaller standard height and width
   #info-box {
     height: 10rem;
     width: 14rem;
   }
-
+//* puts less space then before on the left side of these element
   #info-box, #restaurant-img {
     margin-left: 3rem;
   }
-
+//* give the img a lower width of 75% out of the 100% and gives some space to the top of the img
   #restaurant-img {
     width: 75%;
-    height: 100%;
     margin-top: 4rem;
   }
-
+//* puts the content of the container under each other instead of next to each other
   #info-container {
     flex-direction: column;
   }
