@@ -8,110 +8,110 @@
 
 // Colours
 $teal: #04BF9D;
-$test: #00ab8c;
+$darkTeal: #00ab8c;
 $lightBrown: #D99F6C;
 $mediumBrown: #A6633C;
 $darkBrown: #40261D;
 $lightGrey: #F2F2F2;
 $textColor: #030201;
 
-// HTML Styling
-html,
-body {
-    font-family: Mukta;
+// General HTML Styling
+html, body {
     margin: 0;
     padding: 0;
+    font-family: Mukta;
     font-size: 20px;
     background-color: $lightGrey;
 
-    #title {
-        text-align: center;
-        font-family: GoodBrush;
-        background: -webkit-linear-gradient($teal, $test);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+    main {
+        height: auto;
 
-    #content {
-        background: radial-gradient(circle, rgba(217, 159, 108, 1) 0%, rgba(166, 99, 60, 1) 100%);
-        border: solid 3px $darkBrown;
-        border-radius: 10px;
-        box-shadow: 4px 4px 10px $darkBrown;
+        #container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
 
-        .contentTitle {
+            #leftContainer {
+                #content {
+                    background: radial-gradient(circle, rgba(217, 159, 108, 1) 0%, rgba(166, 99, 60, 1) 100%);
+                    border: solid 3px $darkBrown;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 10px $darkBrown;
+
+                    .contentTitle {
+                        text-align: center;
+                        font-family: GoodBrush;
+                        color: $darkBrown;
+                    }
+
+                    .contentText {
+                        margin-left: 5px; // Margin for adding space between edges of page & text div
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            #rightContainer {
+                img {
+                    max-width: 100%; // Limit amount of space image can take up to not exceed view window (Avoids horizontal scrolling)
+                }
+            }
+        }
+
+        #title {
             text-align: center;
             font-family: GoodBrush;
-            color: $darkBrown;
-        }
-
-        .contentText {
-            margin-left: 5px;
-            margin-right: 5px;
+            background: -webkit-linear-gradient($teal, $darkTeal);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }
 
+// Specific styling for bigger screens
 @media (min-width: 1024px) {
-    main {
-        height: auto;
+    #container {
+        align-items: stretch; // To stretch image vertically and make it cover entire container div
 
-        #container {
+        #leftContainer {
+            max-width: 45%; // max-width for better readability on larger screens
+            margin: 0.5rem; // Margin for better readability
+        }
+
+        #verticalLineDivider {
+            border-left: 6px solid black;
+        }
+
+        #rightContainer {
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: stretch; // To stretch image vertically and make it cover entire container div
 
-            #leftContainer {
-                max-width: 45%; // max-width for better readability on larger screens
-                margin: 0.5rem; // Margin for better readability
-            }
-
-            #verticalLineDivider {
-                border-left: 6px solid black;
-            }
-
-            #rightContainer {
-                width: 100%;
-
-                img {
-                    max-width: 100%;
-                    height: 100vh; // Allows image to cover entire div
-                    object-fit: cover;
-                    position: sticky; // Stick to screen, allows for scrolling textfield, but not scrolling image
-                    top: 0px; // Needed for position sticky
-                }
+            img {
+                height: 100vh; // Allows image to cover entire div
+                object-fit: cover;
+                position: sticky; // Stick to screen, allows for scrolling textfield, but not scrolling image
+                top: 0px; // Needed for position sticky
             }
         }
     }
 }
 
+// Specific styling for smaller screens like mobile phones
 @media (max-width: 1023px) {
+    #container {
+        align-items: center;
+        flex-direction: column;
 
-    main {
-        height: auto;
+        #leftContainer {
+            order: 2; // to make text go below image
 
-        #container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            #leftContainer {
-                order: 2;
-
-                #content {
-                    margin: 1rem;
-                }
+            #content {
+                margin: 1rem; // Margin for readability
             }
+        }
 
-            #rightContainer {
-                height: fit-content;
-
-                img {
-                    max-width: 100%;
-                    order: 1;
-                }
+        #rightContainer {
+            img {
+                order: 1; // to make image show up on top of text section
             }
         }
     }
