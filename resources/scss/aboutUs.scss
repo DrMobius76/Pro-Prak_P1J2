@@ -24,6 +24,34 @@ body {
     font-size: 20px;
     background-color: $lightGrey;
 
+    #title {
+        text-align: center;
+        font-family: GoodBrush;
+        background: -webkit-linear-gradient($teal, $test);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #content {
+        background: radial-gradient(circle, rgba(217, 159, 108, 1) 0%, rgba(166, 99, 60, 1) 100%);
+        border: solid 3px $darkBrown;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px $darkBrown;
+
+        .contentTitle {
+            text-align: center;
+            font-family: GoodBrush;
+            color: $darkBrown;
+        }
+
+        .contentText {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
     main {
         height: auto;
 
@@ -31,71 +59,58 @@ body {
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items: stretch; // Updated to stretch vertically
+            align-items: stretch; // To stretch image vertically and make it cover entire container div
 
             #leftContainer {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-                flex-grow: 1; // Grow to take available space
-                max-width: 45%; // Set a max-width for better readability on larger screens
-                margin: 0.5rem;
-
-                #title {
-                    font-family: GoodBrush;
-                    background: -webkit-linear-gradient($teal, $test);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-
-                #content {
-                    background: radial-gradient(circle, rgba(217, 159, 108, 1) 0%, rgba(166, 99, 60, 1) 100%);
-                    border: solid 3px $darkBrown;
-                    border-radius: 10px;
-                    box-shadow: 4px 4px 10px $darkBrown;
-
-                    .contentTitle {
-                        text-align: center;
-                        font-family: GoodBrush;
-                        color: $darkBrown;
-                    }
-
-                    .contentText {
-                        margin-left: 5px;
-                        margin-right: 5px;
-                    }
-                }
+                max-width: 45%; // max-width for better readability on larger screens
+                margin: 0.5rem; // Margin for better readability
             }
 
             #verticalLineDivider {
                 border-left: 6px solid black;
-                //height: 100%;
-                //display: none; // Hide by default on smaller screens
             }
 
             #rightContainer {
-                //display: flex;
-                //height: 100%;
                 width: 100%;
 
                 img {
                     max-width: 100%;
-                    height: 100vh;
+                    height: 100vh; // Allows image to cover entire div
                     object-fit: cover;
-                    position: sticky;
-                    top: 0px;
+                    position: sticky; // Stick to screen, allows for scrolling textfield, but not scrolling image
+                    top: 0px; // Needed for position sticky
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+
+    main {
+        height: auto;
+
+        #container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            #leftContainer {
+                order: 2;
+
+                #content {
+                    margin: 1rem;
                 }
             }
 
-            // Responsive styling for smaller screens
-            @media (max-width: 768px) {
-                #verticalLineDivider {
-                    display: block; // Show on smaller screens
-                }
+            #rightContainer {
+                height: fit-content;
 
-                #leftContainer {
-                    max-width: 100%; // Occupy full width on smaller screens
+                img {
+                    max-width: 100%;
+                    order: 1;
                 }
             }
         }
