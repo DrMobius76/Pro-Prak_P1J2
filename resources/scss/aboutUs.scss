@@ -1,65 +1,103 @@
-$teal : #04BF9D;
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&display=swap');
+
+@font-face {
+    font-family: GoodBrush;
+    src: url(../fonts/Good-Brush.ttf);
+}
+
+// Colours
+$teal: #04BF9D;
+$test: #00ab8c;
 $lightBrown: #D99F6C;
 $mediumBrown: #A6633C;
 $darkBrown: #40261D;
 $lightGrey: #F2F2F2;
 $textColor: #030201;
 
-html, 
+// HTML Styling
+html,
 body {
-    width: 100%;
-    height: 100%;
+    font-family: Mukta;
     margin: 0;
+    padding: 0;
     font-size: 20px;
-}
-
-body {
     background-color: $lightGrey;
-}
 
-#nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-    background-color: $lightBrown;
-    text-align: center;
+    main {
+        height: auto;
 
-    #logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
+        #container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: stretch; // Updated to stretch vertically
 
-    ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+            #leftContainer {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                flex-grow: 1; // Grow to take available space
+                max-width: 45%; // Set a max-width for better readability on larger screens
+                margin: 0.5rem;
 
-        li a {
-                display: block;
-                padding: 1rem;
+                #title {
+                    font-family: GoodBrush;
+                    background: -webkit-linear-gradient($teal, $test);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                #content {
+                    background: radial-gradient(circle, rgba(217, 159, 108, 1) 0%, rgba(166, 99, 60, 1) 100%);
+                    border: solid 3px $darkBrown;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 10px $darkBrown;
+
+                    .contentTitle {
+                        text-align: center;
+                        font-family: GoodBrush;
+                        color: $darkBrown;
+                    }
+
+                    .contentText {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                }
             }
-    }
-}
 
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 4rem;
-    #title{
-        color: $teal;
-        text-align: center;
-    }
-        .content {
-            width: 50%;
-            background-color: $teal;
-            box-shadow: 10px 5px 5px $textColor;
+            #verticalLineDivider {
+                border-left: 6px solid black;
+                //height: 100%;
+                //display: none; // Hide by default on smaller screens
+            }
+
+            #rightContainer {
+                //display: flex;
+                //height: 100%;
+                width: 100%;
+
+                img {
+                    max-width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                    position: sticky;
+                    top: 0px;
+                }
+            }
+
+            // Responsive styling for smaller screens
+            @media (max-width: 768px) {
+                #verticalLineDivider {
+                    display: block; // Show on smaller screens
+                }
+
+                #leftContainer {
+                    max-width: 100%; // Occupy full width on smaller screens
+                }
+            }
         }
+    }
 }
