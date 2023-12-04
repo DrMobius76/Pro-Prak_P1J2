@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\MenuDishController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MenuItemsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,4 @@ use App\Http\Controllers\MenuItemsController;
 |
 */
 
-Route::get('/', [MenuDishController::class, 'index'])->name('menu.menu');
+Route::get('/menu', [MenuDishController::class,'index'])->name('menu.index');
