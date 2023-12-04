@@ -13,7 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('dishes', function (Blueprint $table) {
-            $table->unsignedBigInteger('id');
+            $table->id();
             $table->string('name');
             $table->json('allergy');
             $table->decimal('price_exc', 5,2)->default(0);
@@ -26,6 +26,7 @@ return new class extends Migration
         //Appetizers
 
         DB::table('dishes')->insert([
+            'id' => 1,
             'name' => 'Tomaten Soep',
             'allergy' => json_encode(['G:1', 'L:0', 'N:0', 'V:0', 'S:0', 'Vs:0']), 
             'price_exc' => 10.99,
@@ -35,6 +36,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 2,
             'name' => 'Prei Room Soep',
             'allergy' => json_encode(['G:1', 'L:1', 'N:0', 'V:1' ,'S:0' ,'Vs:0']), 
             'price_exc' => 13.99,
@@ -44,6 +46,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 3,
             'name' => 'Franse Uien Soep',
             'allergy' => json_encode(['G:1', 'L:1', 'N:0', 'V:1' ,'S:0' ,'Vs:0']), 
             'price_exc' => 11.99,
@@ -53,6 +56,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 4,
             'name' => 'Caprese Salade',
             'allergy' => json_encode(['G:0', 'L:1', 'N:1', 'V:1', 'S:1', 'Vs:0']), 
             'price_exc' => 16.99,
@@ -62,6 +66,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 5,
             'name' => 'Garnalen Cocktail',
             'allergy' => json_encode(['G:1', 'L:0', 'N:0', 'V:1', 'S:1', 'Vs:0']), 
             'price_exc' => 20.99,
@@ -71,6 +76,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 6,
             'name' => 'Carpaccio van rundvlees met rucola en Parmezaanse kaas',
             'allergy' => json_encode(['G:0', 'L:1', 'N:1', 'V:0','S:1', 'Vs:0']), 
             'price_exc' => 19.99,
@@ -82,6 +88,7 @@ return new class extends Migration
         //Main dishes
 
         DB::table('dishes')->insert([
+            'id' => 7,
             'name' => 'Coq au Vin',
             'allergy' => json_encode(['G:1', 'L:0', 'N:0', 'V:0','S:1', 'Vs:0']), 
             'price_exc' => 24.99,
@@ -91,6 +98,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 8,
             'name' => 'Boeuf Bourguignon',
             'allergy' => json_encode(['G:1', 'L:0', 'N:0', 'V:0','S:1', 'Vs:0']), 
             'price_exc' => 29.99,
@@ -100,6 +108,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 9,
             'name' => 'Zalmfilet met citroen-dille saus, geserveerd met gestoomde groenten',
             'allergy' => json_encode(['G:1', 'L:0', 'N:0', 'V:0','S:1', 'Vs:1']), 
             'price_exc' => 33.99,
@@ -111,6 +120,7 @@ return new class extends Migration
         //Deserts
 
         DB::table('dishes')->insert([
+            'id' => 10,
             'name' => 'Crème Brûlée',
             'allergy' => json_encode(['G:0', 'L:1', 'N:0', 'V:1', 'S:0', 'Vs:0']), 
             'price_exc' => 8.99,
@@ -120,6 +130,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 11,
             'name' => 'Tarte Tatin',
             'allergy' => json_encode(['G:1', 'L:1', 'N:0', 'V:1', 'S:0', 'Vs:0']), 
             'price_exc' => 12.99,
@@ -129,6 +140,7 @@ return new class extends Migration
         ]);
 
         DB::table('dishes')->insert([
+            'id' => 12,
             'name' => 'Chocolade Lava Cake met een romige vanillesaus',
             'allergy' => json_encode(['G:1', 'L:1', 'N:0', 'V:1','S:0', 'Vs:0']), 
             'price_exc' => 8.99,
@@ -136,7 +148,7 @@ return new class extends Migration
             'category' => 'Nagerecht',
             'seasonCategory' => 'Zomer',
         ]);
-    }
+     }
 
     /**
      * Reverse the migrations.
