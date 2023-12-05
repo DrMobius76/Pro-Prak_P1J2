@@ -1,65 +1,123 @@
-$teal : #04BF9D;
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&display=swap');
+
+@font-face {
+    font-family: GoodBrush;
+    src: url(../fonts/Good-Brush.ttf);
+}
+
+// Colours
+$teal: #04BF9D;
+$darkTeal: #00ab8c;
 $lightBrown: #D99F6C;
 $mediumBrown: #A6633C;
 $darkBrown: #40261D;
 $lightGrey: #F2F2F2;
 $textColor: #030201;
 
-html, 
-body {
-    width: 100%;
-    height: 100%;
+// General HTML Styling
+html, body {
     margin: 0;
+    padding: 0;
+    font-family: Mukta;
     font-size: 20px;
-}
-
-body {
     background-color: $lightGrey;
-}
 
-#nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-    background-color: $lightBrown;
-    text-align: center;
+    main {
+        height: auto;
 
-    #logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
+        #container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
 
-    ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+            #leftContainer {
+                #content {
+                    background: radial-gradient(circle, rgba(217, 159, 108, 1) 0%, rgba(166, 99, 60, 1) 100%);
+                    border: solid 3px $darkBrown;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 10px $darkBrown;
 
-        li a {
-                display: block;
-                padding: 1rem;
+                    .contentTitle {
+                        text-align: center;
+                        font-family: GoodBrush;
+                        color: $darkBrown;
+                    }
+
+                    .contentText {
+                        margin-left: 5px; // Margin for adding space between edges of page & text div
+                        margin-right: 5px;
+                    }
+                }
             }
+
+            #rightContainer {
+                img {
+                    max-width: 100%; // Limit amount of space image can take up to not exceed view window (Avoids horizontal scrolling)
+                }
+            }
+        }
+
+        #title {
+            text-align: center;
+            font-family: GoodBrush;
+            background: -webkit-linear-gradient($teal, $darkTeal);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    footer {
+        margin-top: 1rem;
     }
 }
 
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 4rem;
-    #title{
-        color: $teal;
-        text-align: center;
-    }
-        .content {
-            width: 50%;
-            background-color: $teal;
-            box-shadow: 10px 5px 5px $textColor;
+// Specific styling for bigger screens
+@media (min-width: 1024px) {
+    #container {
+        align-items: stretch; // To stretch image vertically and make it cover entire container div
+
+        #leftContainer {
+            max-width: 45%; // max-width for better readability on larger screens
+            margin-top: 0.5rem; // Margin for better readability
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
         }
+
+        #verticalLineDivider {
+            border-left: 6px solid black;
+        }
+
+        #rightContainer {
+            width: 100%;
+
+            img {
+                height: 100vh; // Allows image to cover entire div
+                object-fit: cover;
+                position: sticky; // Stick to screen, allows for scrolling textfield, but not scrolling image
+                top: 0px; // Needed for position sticky
+            }
+        }
+    }
+}
+
+// Specific styling for smaller screens like mobile phones
+@media (max-width: 1023px) {
+    #container {
+        align-items: center;
+        flex-direction: column;
+
+        #leftContainer {
+            order: 2; // to make text go below image
+
+            #content {
+                margin: 1rem; // Margin for readability
+            }
+        }
+
+        #rightContainer {
+            img {
+                order: 1; // to make image show up on top of text section
+            }
+        }
+    }
 }
