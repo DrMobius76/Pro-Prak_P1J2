@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite(['resources/scss/menu/menu.scss', 'resources/css/menu/menu.css'])
+    @vite(['resources/css/general/footer.css', 'resources/scss/general/footer.scss'])
 
     <!-- Styles -->
     <style>
@@ -859,11 +860,5 @@
             <label for="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</label>
         </div>
     </div>
-    <div class="linkimages">
-        <label for="Image"><a href="./Homepage.php"><img id="twitter-image" src="/images/algemeen/Twitter-logo.png" alt="Image"></a></label>
-    </div>
-
-    <div class="linkimages">
-        <label for="Image"><a href="./Homepage.php"><img id="instagram-image" src="images/algemeen/instagram.png" alt="Image"></a></label>
-    </div>
+    @include('layouts.footer')
 </body>
