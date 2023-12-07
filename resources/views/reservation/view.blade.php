@@ -16,7 +16,7 @@
     <nav>
         <img src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="FotoRocambolesque" id="navImg">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="/resources/views/home_page/home.blade.php">Home</a></li>
             <li><a href="">About us</a></li>
             <li><a href="">Menu</a></li>
             <li><a href="">Inloggen</a></li>
