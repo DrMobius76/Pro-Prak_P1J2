@@ -1,0 +1,141 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sensation_light.woff);
+  }
+  div {
+    font-family: myFirstFont;
+  }
+  .displayblock {
+      display: block;
+    }
+    
+    .homepageinfo {
+      display: flex;
+    }
+    
+    .header {
+      margin-left: -40vw;
+      margin-top: -2.5vh;
+      padding: 2rem 2.5rem;
+      width: 93vw;
+      height: 4vh;
+      background-color:#60c9ad;
+      overflow:visible;
+      text-align:center
+    }
+    
+    .navbar {
+      overflow: hidden;
+      margin-top: -10.5vh;
+      margin-left: 8vw;
+    
+      a {
+        float: left;
+        display: block;
+        color: #313131;
+        background-color: #d9d9d9;
+        text-align: center;
+        padding: 2.5vh 2vw;
+        text-decoration: none;
+        margin-right: 1vw;
+        border-radius: 10px;
+    
+        &:hover {
+          background-color: #efefef;
+        }
+      }
+    }
+    
+    .login {
+      overflow: hidden;
+      margin-top: -7vh;
+      margin-left: 0vw;
+    
+      a {
+        float: right;
+        display: block;
+        color: #d5cfcd;
+        background-color: #3e261c;
+        text-align: center;
+        padding: 1vh 0.5vw;
+        text-decoration: none;
+        margin-right: 1vw;
+        border-radius: 10px;
+    
+        &:hover {
+          background-color: #58392c;
+        }
+      }
+    }
+    
+    .linkimages {
+      margin-top: 10vh;
+      margin-left: 43vw;
+      width: 5vw;
+      height: 5vh;
+      overflow:visible;
+    }
+
+    #rocam-logo {
+      height: 10vh;
+      margin-left: -90vw;
+      margin-top: -2vh;
+    }
+    
+    .blockrow {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem 10rem;
+    }
+
+#homepage-title {
+  margin-top: 10rem;
+  margin-left: 39rem;
+
+  h1 {
+    color: #60c9ad;
+  }
+}
+
+#info-box {
+  margin-left: 12rem;
+  padding: 2rem 2.5rem;
+  height: 17rem;
+  background-color: #cf9d64;
+  width: 25rem;
+}
+
+#info-box,
+#restaurant-img {
+  margin-top: 7rem;
+  border-radius: 3rem;
+}
+
+#restaurant-img {
+  margin-left: 5rem;
+  width: 30rem;
+}
+
+@media screen and (max-width: 430px) {
+  
+  #homepage-title {
+    margin-left: 4.5rem;
+  }
+
+  #info-box {
+    margin-left: 1.5rem;
+    height: 10rem;
+    width: 14rem;
+  }
+
+  #restaurant-img {
+    width: 75%;
+    height: 100%;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+  }
+
+  #info-container {
+    flex-direction: column;
+  }
+}
