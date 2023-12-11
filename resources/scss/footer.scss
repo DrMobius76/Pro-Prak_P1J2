@@ -1,9 +1,39 @@
- footer {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 20px;
- }
-  #company-image {
-      width: 5vw;
-  }
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    // Address & Contact info
+    #address, #contact {
+        ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    // Social media images
+    #socialContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+        .col {
+            a {
+                display: flex;
+                align-items: center;
+
+                #company-image {
+                    width: 5vw;
+                }
+            }
+        }
+    }
+
+    // Perfectly center divs
+    #address, #contact, #socialContainer {
+        width: 330px;
+    }
+}

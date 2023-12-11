@@ -3,20 +3,20 @@
 
 @font-face {
   font-family: GoodBrush;
-  src: url(../fonts/Good-Brush.ttf);
+  src: url(../../public/fonts/Good\ Brush.ttf);
 }
 
 // Colours
 $teal: #04BF9D;
 $darkTeal: #00ab8c;
+$lightTeal: #00ffd0;
 $lightBrown: #D99F6C;
 $mediumBrown: #A6633C;
 $darkBrown: #40261D;
 $lightGrey: #F2F2F2;
 $textColor: #030201;
 
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   font-family: Mukta;
@@ -27,7 +27,6 @@ html {
     #container {
       height: 100vh;
       position: relative;
-      margin-bottom: 0.5rem;
 
       img {
         width: 100%;
@@ -36,21 +35,32 @@ html {
       }
 
       #textBox {
-        background-color: rgba(0,0, 0, 0.75);
-        border: solid 2px black;
-        border-radius: 10px;
+        // Colours
+        background-color: rgba(0, 0, 0, 0.75);
         color: white;
+        // Border
+        border: solid 2px $darkBrown;
+        border-radius: 10px;
+        // Position
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        // Other stuff
         max-width: 700px;
+
         p, h2 {
           margin: 10px;
         }
-        h2 {
+
+        .centeredText {
           text-align: center;
+          font-weight: bold;
+        }
+
+        #BrushFont {
           font-family: GoodBrush;
+          color: $lightTeal;
         }
       }
     }

@@ -11,9 +11,11 @@
         <div id="container">
             <img src="images/homepage/Restaurant-background.png" alt="Restaurant-background">
             <div id="textBox">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eveniet itaque perferendis adipisci voluptates asperiores! Qui architecto dolor incidunt ab consequatur facere odit iure? Illum vel consequuntur nesciunt quidem quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis suscipit obcaecati enim molestias ea quisquam, molestiae quaerat reiciendis mollitia ratione provident quidem. Illum accusamus quisquam ratione numquam error corrupti animi.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa repellat dolorum amet odio atque ut asperiores quisquam accusantium? Corporis perspiciatis, dolorem iste excepturi a dolor officia aut quisquam culpa delectus!</p>
+                <h2 class="centeredText" id="BrushFont">Restaurant Rocambolesque</h2>
+                <p>Ontdek Restaurant Rocambolesque, opgericht door vrienden Usem Alaoui en Finn Pinneau. Geïnspireerd door Finns overgrootouders uit het noorden van Frankrijk, streven we naar eigentijdse gastronomie.</p>
+                <p>Ons dynamische menu verandert met de seizoenen, met hoogwaardige ingrediënten voor verrassende gerechten. Bij speciale gelegenheden bieden we unieke arrangementen aan.</p>
+                <p class="centeredText">Stap binnen en laat u verwennen door de unieke smaken van Rocambolesque.</p>
+                <p class="centeredText" id="BrushFont">Welkom bij een culinair avontuur!</p>
             </div>
         </div>
     </main>
