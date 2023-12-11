@@ -19,6 +19,7 @@ div {
     overflow: visible;
     border-radius: 45px;
     text-align: center;
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.2);
   }
   
   .header {
@@ -124,10 +125,10 @@ div {
       margin-top: 5vh;
       padding: 1.5rem 0.5rem;
       width: 50vw;
-      height: 50vh;
+      height: 35vh;
       background-color: #cf9d64;
       overflow: visible;
-      border-radius: 45px;
+      border-radius: 25px;
       text-align: center;
       font-size: 10px;
       display: flex ;
@@ -136,7 +137,7 @@ div {
     .blockrow {
       display: flex;
       flex-wrap: wrap;
-      padding: 2rem 10rem;
+      padding: 2rem 7.5rem;
     }
     /*.linkimages {
       margin-bottom: -5vh;
