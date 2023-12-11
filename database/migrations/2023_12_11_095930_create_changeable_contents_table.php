@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('changeable_pages_contents', function (Blueprint $table) {
+        Schema::create('changeable_contents', function (Blueprint $table) {
             $table->id();
             $table->string('header');
             $table->string('content');
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('changeable_pages_contents');
+        Schema::dropIfExists('changeable_contents');
     }
 };
