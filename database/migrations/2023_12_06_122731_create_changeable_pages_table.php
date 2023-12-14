@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('changeable_pages', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('image')->nullable();
+            $table->text('image')->nullable();
             $table->timestamps();
         });
     }

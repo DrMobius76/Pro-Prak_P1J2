@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChangeablePagesController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -33,7 +34,12 @@ Route::get('/reservation/{info}/delete', [ReservationController::class, 'reserva
 //*this sends the user to the aboutUs page
 Route::get('/aboutUs', function () {
     return view('about_us/aboutUs');
-});
+})->name('aboutUs.index');
+
+Route::get('/changeable/about_us/create', [ChangeablePagesController::class, 'createOneAboutUs'])->name('aboutUs.create');
+Route::post('/changeable/about_us/store', [ChangeablePagesController::class, 'storeOneAboutUs'])->name('aboutUs.store');
+Route::get('/changeable/about_us/createcontent', [ChangeablePagesController::class, 'createTwoAboutUs'])->name('aboutUs.createContent');
+Route::post('/changeable/about_us/storecontent', [ChangeablePagesController::class, 'storeTwoAboutUs'])->name('aboutUs.storeContent');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
