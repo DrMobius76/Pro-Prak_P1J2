@@ -12,42 +12,47 @@
 </head>
 
 <body>
-    <div id="container">
-        <img src="{{ asset('img/table-places.png') }}" alt="" id="FotoLayoutTafels">
-        <h1 id="TableHeader">Reservering:</h1>
-        <main class="menuStyling">
-            <form method="post" action="{{route('reservation.store')}}">
-                @csrf
-                @method('post')
-
-                <div>
-                    <div class="createStyling">
-                        <label for="days">Dag:</label>
-                        <input class="edit" type="text" name="days" placeholder="dagen">
-                    </div>
-                    <div class="createStyling">
-                        <label for="date">Datum:</label>
-                        <input class="edit" type="date" name="date" placeholder="datum -> 2023-01-01" min="2023-11-15">
-                    </div>
-                    <div class="createStyling">
-                        <label for="time">Tijd:</label>
-                        <input class="edit" type="time" name="time" placeholder="tijd" min="17:00" max="21:00">
-                    </div>
-                    <div class="createStyling">
-                        <label for="table">Tafel:</label>
-                        <input class="edit" type="number" name="table" placeholder="tafel" min="1" max="8">
-                    </div>
-                    <div class="createStyling">
-                        <label for="child_chairs">Kinderstoelen:</label>
-                        <input class="edit" type="number" name="child_chairs" placeholder="kinderstoelen" min="0" max="2">
-                    </div>
-                    <div>
-                        <input type="submit" value="opslaan">
-                    </div>
-            </form>
-    </div>
-
-    </main>
+    <!-- when the form is send the user gets send to the name of the route where the user needs to go to -->
+    <form method="post" action="{{route('reservation.store')}}">
+        <!-- this is security for laravel it checks if the user is the actually person that makes a request -->
+        @csrf
+        <!-- sends the form as in a post method -->
+        @method('post')
+        <!-- this div is for the day fields -->
+        <div>
+            <label for="days">dag:</label>
+            <input class="edit" type="text" name="days" placeholder="dagen">
+        </div>
+        <!-- this div is for the date fields -->
+        <div>
+            <label for="date">Datum:</label>
+            <input class="edit" type="date" name="date" placeholder="datum">
+        </div>
+        <!-- this is for the time fields on the page -->
+        <div>
+            <label for="time">Tijd:</label>
+            <input class="edit" type="text" name="time" placeholder="tijd">
+        </div>
+        <!-- this is for the table fields for on the page -->
+        <div>
+            <label for="table">Tafel:</label>
+            <input class="edit" type="text" name="table" placeholder="tafel">
+        </div>
+        <!-- this is for the child_chairs field on the page -->
+        <div>
+            <label for="child_chairs">Kinderstoelen:</label>
+            <input class="edit" type="text" name="child_chairs" placeholder="kinderstoelen">
+        </div>
+        <!-- this is for the amount of people coming field on the page -->
+        <div>
+            <label for="people">Aantal mensen:</label>
+            <input class="edit" type="number" name="people" placeholder="aantal mensen">
+        </div>
+        <!-- when the users clicks on this input button then the form gets send -->
+        <div>
+            <input type="submit" value="opslaan">
+        </div>
+    </form>
 </body>
 
 </html>
