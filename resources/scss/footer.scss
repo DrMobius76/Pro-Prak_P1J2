@@ -1,10 +1,12 @@
+// Regular styling
 footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
     // Address & Contact info
-    #address, #contact {
+    #address,
+    #contact {
         ul {
             padding: 0;
             list-style: none;
@@ -33,7 +35,46 @@ footer {
     }
 
     // Perfectly center divs
-    #address, #contact, #socialContainer {
+    #address,
+    #contact,
+    #socialContainer {
         width: 330px;
+    }
+}
+
+// Phone size
+@media (max-width: 426px) {
+    footer {
+        flex-direction: column;
+
+        // Address & Contact info
+        #address,
+        #contact {
+            ul {
+                font-size: 0.8em;
+            }
+        }
+
+        // Social media images
+        #socialContainer {
+            .col {
+                a {
+                    #company-image {
+                        width: 9vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablet size
+@media (max-width: 769px) {
+    // Address & Contact info
+    #address,
+    #contact {
+        ul {
+            font-size: 0.7em;
+        }
     }
 }
