@@ -47,6 +47,8 @@ html, body {
                     .contentText {
                         margin-left: 5px; // Margin for adding space between edges of page & text div
                         margin-right: 5px;
+                        //* puts the text on a new line if the text gets to long
+                        overflow-wrap: break-word;
                     }
                 }
             }
