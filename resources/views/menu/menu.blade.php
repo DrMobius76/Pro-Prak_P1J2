@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The CRUD Alphabet Consisting of :</title>
+    <title>Menu</title>
 </head>
 <body>
-    <h1>Ralof once said "Hey you youre finally awake"</h1>
     <div>
         @if(session()->has('success'))
             <div>
@@ -49,6 +48,5 @@
             @endforeach
         </table>
     </div>
-    <div><p>Ralof once said : "Hey, You youre finally awake"</p></div>
 </body>
 </html>
