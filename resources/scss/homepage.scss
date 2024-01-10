@@ -1,141 +1,103 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&display=swap');
+
 @font-face {
-    font-family: myFirstFont;
-    src: url(sensation_light.woff);
+  font-family: GoodBrush;
+  src: url(../fonts/Good\ Brush.ttf);
+}
+
+// Colours
+$teal: #04BF9D;
+$darkTeal: #00ab8c;
+$lightTeal: #00ffd0;
+$lightBrown: #D99F6C;
+$mediumBrown: #A6633C;
+$darkBrown: #40261D;
+$lightGrey: #F2F2F2;
+$textColor: #030201;
+
+// General styling
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Mukta;
+  font-size: 20px;
+  background-color: $lightGrey;
+
+  #textBox {
+    // Colours
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    // Border
+    border: solid 2px $darkBrown;
+    border-radius: 10px;
   }
-  div {
-    font-family: myFirstFont;
+
+  .centeredText {
+    text-align: center;
+    font-weight: bold;
   }
-  .displayblock {
-      display: block;
+
+  #BrushFont {
+    font-family: GoodBrush;
+    color: $lightTeal;
+  }
+}
+
+@media (max-width: 1023px) { // FIX!!!
+  main {
+    #container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+      }
+
+      #textBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        font-size: 0.8em;
+        padding: 0.5rem;
+      }
     }
-    
-    .homepageinfo {
-      display: flex;
-    }
-    
-    .header {
-      margin-left: -40vw;
-      margin-top: -2.5vh;
-      padding: 2rem 2.5rem;
-      width: 93vw;
-      height: 4vh;
-      background-color:#60c9ad;
-      overflow:visible;
-      text-align:center
-    }
-    
-    .navbar {
-      overflow: hidden;
-      margin-top: -10.5vh;
-      margin-left: 8vw;
-    
-      a {
-        float: left;
-        display: block;
-        color: #313131;
-        background-color: #d9d9d9;
-        text-align: center;
-        padding: 2.5vh 2vw;
-        text-decoration: none;
-        margin-right: 1vw;
-        border-radius: 10px;
-    
-        &:hover {
-          background-color: #efefef;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    #container {
+      height: 100vh;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill
+      }
+
+      #textBox {
+        // Position
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // Other stuff
+        max-width: 700px;
+
+        p,
+        h2 {
+          margin: 10px;
         }
       }
     }
-    
-    .login {
-      overflow: hidden;
-      margin-top: -7vh;
-      margin-left: 0vw;
-    
-      a {
-        float: right;
-        display: block;
-        color: #d5cfcd;
-        background-color: #3e261c;
-        text-align: center;
-        padding: 1vh 0.5vw;
-        text-decoration: none;
-        margin-right: 1vw;
-        border-radius: 10px;
-    
-        &:hover {
-          background-color: #58392c;
-        }
-      }
-    }
-    
-    .linkimages {
-      margin-top: 10vh;
-      margin-left: 43vw;
-      width: 5vw;
-      height: 5vh;
-      overflow:visible;
-    }
-
-    #rocam-logo {
-      height: 10vh;
-      margin-left: -90vw;
-      margin-top: -2vh;
-    }
-    
-    .blockrow {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2rem 10rem;
-    }
-
-#homepage-title {
-  margin-top: 10rem;
-  margin-left: 39rem;
-
-  h1 {
-    color: #60c9ad;
-  }
-}
-
-#info-box {
-  margin-left: 12rem;
-  padding: 2rem 2.5rem;
-  height: 17rem;
-  background-color: #cf9d64;
-  width: 25rem;
-}
-
-#info-box,
-#restaurant-img {
-  margin-top: 7rem;
-  border-radius: 3rem;
-}
-
-#restaurant-img {
-  margin-left: 5rem;
-  width: 30rem;
-}
-
-@media screen and (max-width: 430px) {
-  
-  #homepage-title {
-    margin-left: 4.5rem;
-  }
-
-  #info-box {
-    margin-left: 1.5rem;
-    height: 10rem;
-    width: 14rem;
-  }
-
-  #restaurant-img {
-    width: 75%;
-    height: 100%;
-    margin-top: 4rem;
-    margin-left: 1.5rem;
-  }
-
-  #info-container {
-    flex-direction: column;
   }
 }
