@@ -11,11 +11,13 @@
         <div id="container">
             <img src="images/homepage/Restaurant-background.png" alt="Restaurant-background">
             <div id="textBox">
-                <h2 class="centeredText" id="BrushFont">Restaurant Rocambolesque</h2>
-                <p>Ontdek Restaurant Rocambolesque, opgericht door vrienden Usem Alaoui en Finn Pinneau. Geïnspireerd door Finns overgrootouders uit het noorden van Frankrijk, streven we naar eigentijdse gastronomie.</p>
-                <p>Ons dynamische menu verandert met de seizoenen, met hoogwaardige ingrediënten voor verrassende gerechten. Bij speciale gelegenheden bieden we unieke arrangementen aan.</p>
-                <p class="centeredText">Stap binnen en laat u verwennen door de unieke smaken van Rocambolesque.</p>
-                <p class="centeredText" id="BrushFont">Welkom bij een culinair avontuur!</p>
+                @foreach ($content as $element)
+                <h2 class="centeredText" id="BrushFont">{{$element->header}}</h2>
+                <p>{{$element->pElement1}}</p>
+                <p>{{$element->pElement2}}</p>
+                <p class="centeredText">{{$element->pElement3}}</p>
+                <p class="centeredText" id="BrushFont">{{$element->pElement4}}</p>
+                @endforeach
             </div>
         </div>
     </main>
