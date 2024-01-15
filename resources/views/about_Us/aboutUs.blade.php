@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About-us</title>
     @vite(['resources/css/aboutUs.css', 'resources/scss/aboutUs.scss'])
     @vite(['resources/css/general/footer.css', 'resources/scss/general/footer.scss'])
+    @vite(['resources/css/navBar.css', 'resources/scss/navBar.scss'])
 </head>
+
 <body class="antialiased">
-    <!-- [INSERT NAV BAR] -->
+<nav>
+        <a href="{{route('homepage.view')}}" id="navImgLink"><img src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="FotoRocambolesque" id="navImg"></a>
+        <ul>
+            <li><a href="{{route('homepage.view')}}">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Reserveringen</a></li>
+            <li><a href="{{route('aboutUs')}}">Over ons</a></li>
+            @if (Route::has('login'))
+            @auth
+            <li><a href="{{ url('/dashboard') }}" class="">Dashboard</a></li>
+            @else
+            <li><a href="{{ route('login') }}" class="">Log in</a></li>
+
+            @if (Route::has('register'))
+            <li><a href="{{ route('register') }}" class="">Registreren</a></li>
+            @endif
+            @endauth
+            @endif
+        </ul>
+    </nav>
     <main>
         <div id="container">
             <div id="leftContainer">
@@ -39,4 +61,5 @@
     </main>
     @include('layouts.footer')
 </body>
+
 </html>
