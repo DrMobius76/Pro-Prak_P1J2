@@ -38,7 +38,7 @@ Route::get('/reservation/{info}/delete', [ReservationController::class, 'reserva
 //*this sends the user to the aboutUs page
 Route::get('/aboutUs', function () {
     return view('about_us/aboutUs');
-});
+})->name('aboutUs');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
