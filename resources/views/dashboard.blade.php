@@ -34,4 +34,20 @@
         </div>
     </div>
 
+    <!-- About us & homepage element veranderen -->
+    <div class="button-container">
+        <div class="button-subcontainer bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg">
+            <a href="{{route('homepage.editContent')}}">
+                <div class="menu p-6 text-gray-900 dark:text-gray-100">
+                    {{ __("Verander de homepage") }}
+                </div>
+            </a>
+            <a href="#">
+                <div class="reservation text-gray-900 dark:text-gray-100">
+                    {{ __("Verander de over ons pagina") }}
+                </div>
+            </a>
+        </div>
+    </div>
+
 </x-app-layout>

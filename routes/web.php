@@ -3,6 +3,7 @@
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChangeableHomepageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage/home');
-});
+// Homepage
+Route::get('/', [ChangeableHomepageController::class, 'homepage'])->name('homepage.view');
+
+// Update homepage elements
+Route::get('/homepage/edit-content', [ChangeableHomepageController::class, 'changeHomepageContent'])->name('homepage.editContent');
+Route::put('/homepage/update-content', [ChangeableHomepageController::class, 'updateContent'])->name('homepage.updateContent');
+
 //* this sends the user to the view page and adds the reservationView function to the page
 Route::get('/reservation/view', [ReservationController::class, 'reservationView'])->name('reservation.view');
 //* this sends the user to the create page and adds the reservationCreate function to the page
@@ -33,7 +38,7 @@ Route::get('/reservation/{info}/delete', [ReservationController::class, 'reserva
 //*this sends the user to the aboutUs page
 Route::get('/aboutUs', function () {
     return view('about_us/aboutUs');
-});
+})->name('aboutUs');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
