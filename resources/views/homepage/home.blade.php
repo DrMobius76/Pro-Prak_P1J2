@@ -14,18 +14,19 @@
         <a href="{{route('homepage.view')}}" id="navImgLink"><img src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="FotoRocambolesque" id="navImg"></a>
         <ul>
             <li><a href="{{route('homepage.view')}}">Home</a></li>
-            <li><a href="{{route('aboutUs')}}">Over ons</a></li>
             <li><a href="">Menu</a></li>
+            <li><a href="">Reserveringen</a></li>
+            <li><a href="{{route('aboutUs')}}">Over ons</a></li>
             @if (Route::has('login'))
-                @auth
-                <li><a href="{{ url('/dashboard') }}" class="">Dashboard</a></li>
-                @else
-                <li><a href="{{ route('login') }}" class="">Log in</a></li>
+            @auth
+            <li><a href="{{ url('/dashboard') }}" class="">Dashboard</a></li>
+            @else
+            <li><a href="{{ route('login') }}" class="">Log in</a></li>
 
-                @if (Route::has('register'))
-                <li><a href="{{ route('register') }}" class="">Registreren</a></li>
-                @endif
-                @endauth
+            @if (Route::has('register'))
+            <li><a href="{{ route('register') }}" class="">Registreren</a></li>
+            @endif
+            @endauth
             @endif
         </ul>
     </nav>
