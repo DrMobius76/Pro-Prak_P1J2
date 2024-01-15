@@ -1,0 +1,126 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&display=swap');
+
+@font-face {
+    font-family: GoodBrush;
+    src: url(../fonts/Good\ Brush.ttf);
+}
+
+// Colours
+$teal: #04BF9D;
+$darkTeal: #00ab8c;
+$lightTeal: #00ffd0;
+$lightBrown: #D99F6C;
+$mediumBrown: #A6633C;
+$darkBrown: #40261D;
+$lightGrey: #F2F2F2;
+$textColor: #030201;
+
+// General Styling
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Mukta;
+    font-size: 20px;
+    background-color: $lightGrey;
+
+    #container {
+        display: flex;
+        align-items: center;
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center
+            ;
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                textarea {
+                    resize: none;
+                    font-size: 1rem;
+                    border: solid 1px $textColor;
+                    padding: 12px 20px;
+                }
+            }
+
+            #submit {
+                cursor: pointer;
+                font-size: 0.75rem;
+                font-weight: bold;
+                background-color: $teal;
+                padding: 1rem;
+                border: solid 1px $textColor;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+// Desktop styling
+@media (min-width: 1024px) {
+
+    html,
+    body {
+        main {
+            #container {
+                form {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .inputContainer {
+                        margin: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large desktop styling
+@media (min-width: 1242px) {
+    #container {
+        height: 100vh;
+    }
+}
+
+// Tablet styling
+@media (max-width: 1023px) {
+    main {
+        #container {
+            justify-content: center;
+
+            form {
+                flex-direction: column;
+
+                .inputContainer {
+                    margin-top: 0.3rem;
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+// Mobile styling
+@media (max-width: 767px) {
+    main {
+        #container {
+            form {
+                .inputContainer {
+                    textarea {
+                        font-size: 0.8rem;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+}

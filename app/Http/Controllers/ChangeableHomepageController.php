@@ -8,23 +8,19 @@ use Illuminate\Support\Facades\DB;
 
 class ChangeableHomepageController extends Controller
 {
+    // Grabs data from DB and sends it to homepage
     public function homepage()
     {
         $content = DB::table('changeable_homepages')
             ->select('header', 'pElement1', 'pElement2', 'pElement3', 'pElement4')
             ->get();
 
-        // foreach ($content as $element) {
-        //     dd($element->header);
-        // };
-
         return view('homepage/home', [
             'content' => $content
         ]);
-
-        // return view('homepage/home', compact('content'));
     }
 
+    // Gets data from DB and sends it to update page
     public function changeHomepageContent()
     {
         $content = DB::table('changeable_homepages')
@@ -36,6 +32,7 @@ class ChangeableHomepageController extends Controller
         ]);
     }
 
+    // Function to update the content to DB
     public function updateContent(Request $request)
     {
         $validatedData = $request->validate([
