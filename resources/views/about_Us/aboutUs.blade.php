@@ -11,7 +11,7 @@
 </head>
 
 <body class="antialiased">
-<nav>
+    <nav>
         <a href="{{route('homepage.view')}}" id="navImgLink"><img src="/images/algemeen/Rocambolesque-logo-DEF.png" alt="FotoRocambolesque" id="navImg"></a>
         <ul>
             <li><a href="{{route('homepage.view')}}">Home</a></li>

@@ -42,7 +42,7 @@
                     {{ __("Verander de homepage") }}
                 </div>
             </a>
-            <a href="#">
+            <a href="{{route('aboutUs')}}">
                 <div class="reservation text-gray-900 dark:text-gray-100">
                     {{ __("Verander de over ons pagina") }}
                 </div>

@@ -16,13 +16,16 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('homepage.view')" :active="request()->routeIs('homepage.view')">
+                        {{ __('Homepage') }}
+                    </x-nav-link>
                     <x-nav-link>
                         {{ __('Menu') }}
                     </x-nav-link>
                     <x-nav-link>
                         {{ __('Reserveringen') }}
                     </x-nav-link>
-                    <x-nav-link>
+                    <x-nav-link :href="route('aboutUs')" :active="request()->routeIs('aboutUs')">
                         {{ __('Over ons') }}
                     </x-nav-link>
                 </div>
