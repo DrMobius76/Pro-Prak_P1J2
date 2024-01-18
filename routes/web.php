@@ -58,31 +58,11 @@ Route::get('/aboutUs', function () {
 
 // Changeable page for about us
 //*this sends the user to the aboutUs page
-// Route::get('/changeable_Pages/about_us/index', [ChangeablePagesController::class, 'indexAboutUs'])->name('aboutUs.index');
-
-//* route for the create for the title and image for the about us page
-Route::get('/changeable/about_us/create', [ChangeablePagesController::class, 'createMainAboutUs'])->name('aboutUs.create');
-//* route for the store for the title and image for the about us page
-Route::post('/changeable/about_us/store', [ChangeablePagesController::class, 'storeMainAboutUs'])->name('aboutUs.store');
-
-//* route for the create for the header and content for the about us page
-Route::get('/changeable/about_us/createcontent', [ChangeablePagesController::class, 'createContentAboutUs'])->name('aboutUs.createContent');
-//* route for the store for the header and content for the about us page
-Route::post('/changeable/about_us/storecontent', [ChangeablePagesController::class, 'storeContentAboutUs'])->name('aboutUs.storeContent');
+Route::get('/changeable_Pages/about_us/index', [ChangeablePagesController::class, 'indexAboutUs'])->name('aboutUs.index');
 
 //* route for the edit for the title and image for the about us page
-Route::get('/changeable/about_us/edit/{info}', [ChangeablePagesController::class, 'editMainAboutUs'])->name('aboutUs.edit');
+Route::get('/changeable/about_us/edit', [ChangeablePagesController::class, 'editMainAboutUs'])->name('aboutUs.edit');
 //* route for the update for the title and image for the about us page
 Route::put('/changeable/about_us/update', [ChangeablePagesController::class, 'updateMainAboutUs'])->name('aboutUs.update');
-
-//* route for the edit for the header and content for the about us page
-Route::get('/changeable/about_us/editcontent/{info}', [ChangeablePagesController::class, 'editContentAboutUs'])->name('aboutUs.editContent');
-//* route for the update for the header and content for the about us page
-Route::put('/changeable/about_us/updatecontent', [ChangeablePagesController::class, 'updateContentAboutUs'])->name('aboutUs.updateContent');
-
-//* route for the delete for the title and image for the about us page
-Route::get('/changeable/about_us/delete/{info}', [ChangeablePagesController::class, 'deleteMainAboutUs'])->name('aboutUs.delete');
-//* route for the delete for the header and content for the about us page
-Route::get('/changeable/about_us/deleteContent/{info}', [ChangeablePagesController::class, 'deleteContentAboutUs'])->name('aboutUs.deleteContent');
 
 require __DIR__ . '/auth.php';
