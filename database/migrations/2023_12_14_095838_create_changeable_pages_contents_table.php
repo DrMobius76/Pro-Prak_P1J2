@@ -22,7 +22,7 @@ return new class extends Migration
         DB::table('changeable_pages_contents')->insert([
             [
                 'header' => 'Het restaurant',
-                'content' => 'Welkom bij Restaurant Rocambolesque, waar gastronomie en avontuur samenkomen. Ons verhaal begint met twee vrienden, Usem Alaoui en Finn Pinneau, die hun passie voor de culinaire wereld bundelen en de droom van een eigen restaurant verwezenlijken. Met jarenlange ervaring in de horeca hebben ze besloten om de traditionele paden te verlaten en iets nieuws te creëren.',
+                'content' => 'Too long, please fix me aaaaaaa.',
             ]
         ]);
     }
