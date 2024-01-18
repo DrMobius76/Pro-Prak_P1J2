@@ -14,21 +14,20 @@
             <li><a href="">About us</a></li>
             <li><a href="">Menu</a></li>
             @if (Route::has('login'))
-        <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
+        <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10 no-underline">
             @auth
-            <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+            <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 no-underline">Dashboard</a>
             @else
-            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 no-underline">Log in</a>
 
             @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 no-underline">Register</a>
             @endif
             @endauth
         </div>
         @endif
             </ul>
     </nav>
-    <img src="/images/algemeen/reservationBackground.jpeg" alt="achtergrond" id="reserveringBackgroundImage">
     <main id="viewMenu">
     <!-- this is a link to the create page so you can make a reservation, it calls out to the name of the route -->
     <a href="{{route('reservation.create')}}">maak een reservering</a>
@@ -88,6 +87,7 @@
             @endforeach
         </tbody>
     </table>
+</main>
 </body>
 
 </html>

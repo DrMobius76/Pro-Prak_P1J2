@@ -21,8 +21,14 @@ use PHPUnit\TextUI\Configuration\Configuration;
  */
 interface Emitter
 {
+    /**
+     * @deprecated
+     */
     public function exportObjects(): void;
 
+    /**
+     * @deprecated
+     */
     public function exportsObjects(): bool;
 
     public function applicationStarted(): void;
@@ -109,8 +115,14 @@ interface Emitter
      */
     public function testRegisteredComparator(string $className): void;
 
+    /**
+     * @deprecated
+     */
     public function testAssertionSucceeded(mixed $value, Constraint\Constraint $constraint, string $message): void;
 
+    /**
+     * @deprecated
+     */
     public function testAssertionFailed(mixed $value, Constraint\Constraint $constraint, string $message): void;
 
     /**
@@ -173,9 +185,9 @@ interface Emitter
 
     public function testTriggeredPhpunitDeprecation(Code\Test $test, string $message): void;
 
-    public function testTriggeredPhpDeprecation(Code\Test $test, string $message, string $file, int $line, bool $suppressed, bool $ignoredByBaseline): void;
+    public function testTriggeredPhpDeprecation(Code\Test $test, string $message, string $file, int $line, bool $suppressed, bool $ignoredByBaseline, bool $ignoredByTest): void;
 
-    public function testTriggeredDeprecation(Code\Test $test, string $message, string $file, int $line, bool $suppressed, bool $ignoredByBaseline): void;
+    public function testTriggeredDeprecation(Code\Test $test, string $message, string $file, int $line, bool $suppressed, bool $ignoredByBaseline, bool $ignoredByTest): void;
 
     public function testTriggeredError(Code\Test $test, string $message, string $file, int $line, bool $suppressed): void;
 

@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    @vite(['resources/scss/ReserveringenHomePage.scss'])
+    @vite(['resources/scss/ReserveringenHomePage.scss', 'resources/scss/homepage.scss' ])
 </head>
 
 <img src="{{ asset('img/table-places.png') }}" alt="" id="FotoLayoutTafels">
 
 <body>
+    <main>
     <!-- sends the user to the name of the route for the page they need to go to with the information from the database -->
     <form method="post" action="{{route('reservation.update', ['info' => $info])}}">
         <!-- this is security for laravel it checks if the user is the actually person that makes a request -->
