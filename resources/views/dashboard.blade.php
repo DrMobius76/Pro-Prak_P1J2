@@ -11,11 +11,11 @@
 
     <div class="button-container">
         <!-- <div id="button-subcontainer"> -->
-            <div class="button-subcontainer bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("Je bent ingelogd!") }}
-                </div>
+        <div class="button-subcontainer bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg">
+            <div class="p-6 text-gray-900 dark:text-gray-100">
+                {{ __("Je bent ingelogd!") }}
             </div>
+        </div>
         <!-- </div> -->
     </div>
 
@@ -42,7 +42,7 @@
                     {{ __("Verander de homepage") }}
                 </div>
             </a>
-            <a href="{{route('aboutUs')}}">
+            <a href="{{route('aboutUs.edit')}}">
                 <div class="reservation text-gray-900 dark:text-gray-100">
                     {{ __("Verander de over ons pagina") }}
                 </div>
