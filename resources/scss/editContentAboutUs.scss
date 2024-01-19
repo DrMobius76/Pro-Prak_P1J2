@@ -1,0 +1,88 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&display=swap');
+
+@font-face {
+    font-family: GoodBrush;
+    src: url(../fonts/Good\ Brush.ttf);
+}
+
+// Colours
+$teal: #04BF9D;
+$darkTeal: #00ab8c;
+$lightTeal: #00ffd0;
+$lightBrown: #D99F6C;
+$mediumBrown: #A6633C;
+$darkBrown: #40261D;
+$lightGrey: #F2F2F2;
+$textColor: #030201;
+
+// General Styling
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Mukta;
+    font-size: 20px;
+    background-color: $lightGrey;
+
+    div.container, form, div.inputContainer {
+        display: flex;
+    }
+
+    div.container, form {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    div.container {
+        form {
+            justify-content: center;
+
+        }
+        input, select, textarea {
+            padding: 0.4rem;
+        }
+        input {
+            margin-right: 1rem;
+        }
+        div.inputContainer {
+            margin-top: 1rem;
+            textarea {
+                resize: none;
+            }
+
+            label {
+                align-self: center;
+                font-weight: bold;
+                margin-right: 0.5rem;
+            }
+        }
+    
+        .submit {
+                cursor: pointer;
+                font-size: 0.75rem;
+                font-weight: bold;
+                background-color: $teal;
+                padding: 1rem;
+                border: solid 1px $textColor;
+                border-radius: 0.4rem;
+                margin-top: 0.5rem;
+            }
+    }
+}
+
+// Desktop styling
+@media (min-width: 1024px) {
+}
+
+// Large desktop styling
+@media (min-width: 1242px) {
+}
+
+// Tablet styling
+@media (max-width: 1023px) {
+}
+
+// Mobile styling
+@media (max-width: 767px) {
+}
