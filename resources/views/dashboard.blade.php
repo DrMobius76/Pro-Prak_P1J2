@@ -21,7 +21,8 @@
 
     <div class="button-container">
         <div class="button-subcontainer bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg">
-            <a href="#">
+            <a href="{{route('menu.view')}}">
+
                 <div class="menu p-6 text-gray-900 dark:text-gray-100">
                     {{ __("Verander het menu") }}
                 </div>
