@@ -51,6 +51,7 @@ td {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 75%; // Added cause footer-bar was messy and not correct
 }
 
 #TableHeader {
@@ -74,49 +75,6 @@ td {
     }
 }
 
-nav{
-    color: #fff;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    list-style: none;
-    padding: 0px 5px;
-    transition-duration: 0.5s;
-}
-
-nav ul li:hover {
-    background-color: white;
-}
-
-nav ul li a {
-    font-size: 15px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: white;
-    padding: 1px;
-}
-
-nav ul li a:hover {
-    color: #000;
-    transition-duration: 0.5s;
-}
-
-#navImg {
-width: 10rem;
-}
-
 #reserveringBackgroundImage{
     width: 50%;
 }
@@ -125,6 +83,7 @@ body{
     background-image: url( "/public/images/algemeen/reservationBackground.jpeg");
     background-size: cover; 
     background-repeat: no-repeat;
+    height: 100vh; // Added cause footer-bar was messy and not correct
 }
 
 #createStyling{

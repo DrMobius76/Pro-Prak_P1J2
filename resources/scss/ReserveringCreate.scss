@@ -8,39 +8,6 @@ body {
     align-items: center;
 }
 
-nav {
-    color: #fff;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#navImg {
-    max-width: 100%;
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
 main {
     margin-top: 60px; /* Adjust this margin to leave space for the fixed navigation bar */
     background-color: #fff;

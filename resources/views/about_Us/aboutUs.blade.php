@@ -16,7 +16,7 @@
         <ul>
             <li><a href="{{route('homepage.view')}}">Home</a></li>
             <li><a href="">Menu</a></li>
-            <li><a href="">Reserveringen</a></li>
+            <li><a href="{{route('reservation.view')}}">Reserveringen</a></li>
             <li><a href="{{route('aboutUs')}}">Over ons</a></li>
             @if (Route::has('login'))
             @auth
