@@ -26,7 +26,7 @@
                     {{ __("Verander het menu") }}
                 </div>
             </a>
-            <a href="#">
+            <a href="{{route('reservation.view')}}">
                 <div class="reservation text-gray-900 dark:text-gray-100">
                     {{ __("Bekijk & verander reserveringen") }}
                 </div>
