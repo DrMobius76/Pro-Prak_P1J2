@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChangeableHomepageController;
 
@@ -35,6 +36,23 @@ Route::get('/reservation/{info}/edit', [ReservationController::class, 'reservati
 Route::put('/reservation/{info}/update', [ReservationController::class, 'reservationUpdate'])->name('reservation.update');
 //* this sends the user to the view page and deletes the reservation and adds the reservationDelete function to the page
 Route::get('/reservation/{info}/delete', [ReservationController::class, 'reservationDelete'])->name('reservation.delete');
+
+//* this sends the user to the view page and adds the viewMenu function to the page
+Route::get('/menu/view', [MenuController::class, 'viewMenu'])->name('menu.view');
+
+Route::get('/menu/create', [MenuController::class, 'create'])->name('menu.create');
+
+Route::post('/menu/view', [MenuController::class, 'store'])->name('menu.store');
+
+Route::get('/menu/{info}/edit', [MenuController::class, 'edit'])->name('menu.edit');
+
+Route::put('/menu/{info}/update', [MenuController::class, 'update'])->name('menu.update');
+
+Route::get('/menu/{info}/destroy', [MenuController::class, 'destroy'])->name('menu.destroy');
+
+//* this sends the non admin user to the view page without the create, edit and delete buttons
+Route::get('/menu/viewNonAdmin', [MenuController::class, 'viewMenuNonAdmin'])->name('menu.viewNonAdmin');
+
 //*this sends the user to the aboutUs page
 Route::get('/aboutUs', function () {
     return view('about_us/aboutUs');
