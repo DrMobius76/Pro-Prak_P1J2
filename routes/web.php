@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChangeableHomepageController;
+use App\Http\Controllers\ChangeablePagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,5 +68,19 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// Regular about us route
+Route::get('/aboutUs', function () {
+    return view('about_us/aboutUs');
+})->name('aboutUs');
+
+// Changeable page for about us
+//*this sends the user to the aboutUs page
+Route::get('/changeable_Pages/about_us/index', [ChangeablePagesController::class, 'indexAboutUs'])->name('aboutUs.index');
+
+//* route for the edit for the title and image for the about us page
+Route::get('/changeable/about_us/edit', [ChangeablePagesController::class, 'editMainAboutUs'])->name('aboutUs.edit');
+//* route for the update for the title and image for the about us page
+Route::put('/changeable/about_us/update', [ChangeablePagesController::class, 'updateMainAboutUs'])->name('aboutUs.update');
 
 require __DIR__ . '/auth.php';

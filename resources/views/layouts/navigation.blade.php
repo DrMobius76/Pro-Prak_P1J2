@@ -17,12 +17,16 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('menu.viewNonAdmin')">
+                    <x-nav-link :href="route('homepage.view')" :active="request()->routeIs('homepage.view')">
+                        {{ __('Homepage') }}
+                    </x-nav-link>
+                    <x-nav-link>
                         {{ __('Menu') }}
                     </x-nav-link>
-                    <x-nav-link>
+                    <x-nav-link :href="route('reservation.view')" :active="request()->routeIs('reservation.view')">
                         {{ __('Reserveringen') }}
                     </x-nav-link>
-                    <x-nav-link>
+                    <x-nav-link :href="route('aboutUs')" :active="request()->routeIs('aboutUs')">
                         {{ __('Over ons') }}
                     </x-nav-link>
                 </div>
